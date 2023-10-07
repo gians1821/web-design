@@ -23,3 +23,28 @@ console.log(todos[1].text);
 
 const todoJSON = JSON.stringify(todos);
 console.log(todoJSON);
+
+console.clear();
+
+// For
+for (let i = 0; i < 10; i++) {
+    console.log(`For Loop Number: ${i}`);
+}
+
+// While
+let i = 0;
+while(i < 10) {
+    console.log(`While Loop Number: ${i}`);
+    i++;
+}
+
+console.clear();
+/*
+for (let i = 0; i < todos.length; i++) {
+    console.log(todos[i].text)
+}
+*/
+for (let todo of todos) {
+    console.log(todo.text)    
+}
+

@@ -1,11 +1,6 @@
-// String, Numbres, Boolean, null, undefined
+const s = 'technology, computers, code, it';
 
-const name = 'John';
-const age = 30;
-
-// COncatenation
-console.log('My name is ' + name + ' and I am ' + age)
-// Template String
-const hello = `My name is ${name} and I am ${age}`
-
-console.log(hello);
+console.log(s.length);
+console.log(s.toUpperCase());
+console.log(s.substring(0,10));
+console.log(s.split(','));

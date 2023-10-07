@@ -1,6 +1,11 @@
-// let, const
-// always use const unless you know you will gonna reasing it
+// String, Numbres, Boolean, null, undefined
 
-const score = 10;
+const name = 'John';
+const age = 30;
+const rating = 4.5;
+const isCool = true;
+const x = null;
+const y = undefined;
+let z;
 
-console.log(score);
+console.log(typeof z);

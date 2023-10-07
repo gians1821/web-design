@@ -1,15 +1,26 @@
-// Arrays - variables that hold multiple values
+const person = {
+    firstName: 'John',
+    lastName: 'Doe',
+    age: 30,
+    hobbies: ['music', 'movies', 'sports'],
+    address: {
+        street: '50 main st',
+        city: 'Boston',
+        state: 'MA'
+    }
+}
 
-const numbers = new Array(1, 2, 3, 4, 5);
-const fruits = ['apples', 'oranges', 'pears', 10, true];
+console.log(person);
+console.log(person.firstName);
+console.log(person.hobbies[1]);
+console.log(person.address.city);
 
-fruits[3] = 'grapes';
+// const { firstName, lastName } = person;
+const { firstName, lastName, address: { city } } = person;
 
-fruits.push('mangos'); // Añade una variable al final del array
-fruits.unshift('strawberries'); // Añade una variable al inicio del array
-fruits.pop(); // Elimina la última variable del array
+console.log(firstName);
+console.log(city);
 
-console.log(fruits);
-console.log(fruits[0]);
-console.log(Array.isArray('hello'));
-console.log(fruits.indexOf('oranges'));
+person.email = 'john@gmail.com';
+
+console.log(person);

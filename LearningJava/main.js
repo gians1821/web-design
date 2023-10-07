@@ -1,26 +1,25 @@
-const person = {
-    firstName: 'John',
-    lastName: 'Doe',
-    age: 30,
-    hobbies: ['music', 'movies', 'sports'],
-    address: {
-        street: '50 main st',
-        city: 'Boston',
-        state: 'MA'
+const todos = [
+    {
+        id: 1,
+        text: 'Take out trash',
+        isCompleted: true
+    },
+    {
+        id: 2,
+        text: 'Meeting with boss',
+        isCompleted: true
+    },
+    {
+        id: 3,
+        text: 'Dentist appt',
+        isCompleted: false
     }
-}
+];
 
-console.log(person);
-console.log(person.firstName);
-console.log(person.hobbies[1]);
-console.log(person.address.city);
+console.log(todos);
+console.log(todos[1].text);
 
-// const { firstName, lastName } = person;
-const { firstName, lastName, address: { city } } = person;
+// CONVIRTIENDO A JSON
 
-console.log(firstName);
-console.log(city);
-
-person.email = 'john@gmail.com';
-
-console.log(person);
+const todoJSON = JSON.stringify(todos);
+console.log(todoJSON);

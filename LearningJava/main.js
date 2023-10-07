@@ -1,16 +1,21 @@
-// Constructor function
-function Person(firstName, lastName, dob) {
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.dob = new Date(dob);
-    this.getFullName = function() {
-        return `${this.firstName} ${this.lastName}`
+// CLASS
+class Person {
+    constructor (firstName, lastName, dob) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dob = new Date(dob);
+    }
+
+    getBirthYear() {
+        return this.dob.getFullYear();
+    }
+
+    getFullName() {
+        return `${this.firstName} ${this.lastName}`;
     }
 }
 
-Person.prototype.getBirthYear = function() { 
-    return this.dob.getFullYear();
-}
+
 
 // Instantiate object
 const person1 = new Person('John', 'Doe', '4-3-1980');

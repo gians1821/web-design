@@ -1,4 +1,5 @@
-// const elemento = document.links; // COLECCIONA LOS LINKS
-const elemento = document.links;
 
-console.log(elemento);
+const padre = document.querySelector('.listas-cursos');
+
+
+console.log(padre.children[0].nextElementSibling.nextElementSibling);

@@ -1,3 +1,4 @@
-.principal>.titulo {
-    color: brown;
+a[class] {
+    background-color: black;
+    color: chartreuse;
 }

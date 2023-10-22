@@ -1,4 +1,4 @@
-.menu ~ li {
+.menu + li {
     background-color: black;
     color: chartreuse;
 }

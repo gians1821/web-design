@@ -3,6 +3,6 @@
     color: chartreuse;
 }
 
-[class*='fa-'] {
+[href$='.com'] {
     color: red;
 }

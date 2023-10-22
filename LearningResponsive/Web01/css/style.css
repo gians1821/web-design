@@ -2,3 +2,31 @@
     background-color: black;
     color: chartreuse;
 }
+
+.btn-facebook {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.btn-twitter {
+    background-color: rgb(45, 170, 179);
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.btn-instagram {
+    background-color: rgb(180, 55, 174);
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.btn-linkedin {
+    background-color: rgba(0, 0, 255, 0.555);
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}

@@ -7,14 +7,16 @@ div {
     border: 1px solid black;
 }
 
-.texto1 {
+.titulo {
     background-color: blue;
     color: white;
-    padding: 10px;
+    padding: 20px;
+    width: 20em;
 }
 
-.texto2 {
+.enlace {
     background-color: red;
     color: white;
-    padding: 10px;
+    padding: 20px;
+    width: 10em;
 }

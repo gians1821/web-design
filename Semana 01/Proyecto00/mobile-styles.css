@@ -1,0 +1,29 @@
+@media only screen and (max-width: 768px) {
+    #cuerpo {
+        grid-template-columns: auto auto auto;
+    }
+
+    #c-caja-1 {
+        margin-inline-end: 0.5em;
+    }
+    
+    #c-caja-2 {
+        margin-inline-end: 0.5em;
+    }
+
+    #pie {
+        grid-template-columns: auto auto auto auto;
+    }
+    
+    #p-caja-1 {
+        margin-inline-end: 0.5em;
+    }
+
+    #p-caja-2 {
+        margin-inline-end: 0.5em;
+    }
+
+    #p-caja-3 {
+        margin-inline-end: 0.5em;
+    }
+}

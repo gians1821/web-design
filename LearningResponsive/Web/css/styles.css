@@ -1,33 +1,27 @@
-#card {
-    margin: auto;
-    margin-top: 3em;
-    align-items: center;
-    width: 15em;
-    background-color: white;
-    padding: 1em;
-    border-radius: 0.3em;
-    box-shadow: 0 0 2em -0.5em gray;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.photo {
-    width: 12em;
-    border-radius: 50%;
-    background-color: blue;
+body {
+    margin: auto;
+    color: white;
+    width: 75%;
+    height: 500px;
+    background-color: rgb(218, 169, 141);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    width: 10em;
+    margin: auto;
     display: block;
-    margin: auto;
 }
 
-.name {
-    color: green;
-    font-family: sans-serif;
+h2 {
     text-align: center;
-}
+    color: black;
 
-.description {
-    font-family: sans-serif;
-    text-align: center;
-}
-
-#card:hover {
-    box-shadow: 0 0 2em 0em gray;
 }

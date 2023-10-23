@@ -1,31 +1,36 @@
-* {
-    margin: 0;
-}
-
-div {
-    text-align: center;
-    border: 1px solid black;
-}
-
-.titulo {
-    background-color: blue;
-    color: white;
-    padding: 20px;
-    width: 20em;
-}
-
-.enlace {
-    display: inline-block;
-    background-color: #f2f2f2;
-    color: black;
-    padding: 1em;
-    margin: 2em;
+#card {
+    margin: auto;
+    margin-top: 3em;
+    align-items: center;
     width: 15em;
-    border: 1px solid #dddddd;
-    text-align: center;
-    transition: padding 0.5s ease;
+    background-color: white;
+    padding: 1em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 2em -0.5em gray;
+    border-style: ;
+    border-width: 0.01em;
+    border-color:  gray;
 }
 
-.enlace:hover {
-    padding: 2.1em;
+.photo {
+    width: 12em;
+    border-radius: 50%;
+    background-color: blue;
+    display: block;
+    margin: auto;
+}
+
+.name {
+    color: green;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.description {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#card:hover {
+    box-shadow: 0 0 2em 0em gray;
 }

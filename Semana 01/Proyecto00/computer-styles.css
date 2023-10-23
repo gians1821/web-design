@@ -1,0 +1,26 @@
+@media only screen and (min-width: 1024px) {
+    #c-caja-2 {
+        display: none;
+    }
+
+    #c-caja-3 {
+        display: none;
+    }
+    
+    #pie {
+        grid: 5em / auto;
+    }
+    
+    #p-caja-2 {
+        display: none;
+    }
+
+    #p-caja-3 {
+        display: none;
+    }
+
+    #p-caja-4 {
+        display: none;
+    }
+}
+

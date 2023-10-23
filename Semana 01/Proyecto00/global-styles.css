@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#pagina-web {
+    background-color: black;
+    padding: 0.3em;
+}
+
+#encabezado {
+    background-color: #89CFF0;
+    height: 10em;
+    margin: 0.3rem;
+    display: grid;
+    place-items: center;
+}
+
+#cuerpo {
+    margin: 0.3em;
+    margin-top: 0.5em;
+    display: grid;
+}
+
+.caja-cuerpo {
+    background-color: #B20000;
+    height: 17em;
+    display: grid;
+    place-items: center;
+}
+
+#pie {
+    margin: 0.3em;
+    margin-top: 0.5em;
+    display: grid;
+}
+
+.caja-pie {
+    background-color: #50C878;
+    height: 7em;
+    display: grid;
+    place-items: center;
+}

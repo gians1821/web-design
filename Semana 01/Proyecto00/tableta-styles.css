@@ -1,0 +1,30 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #cuerpo {
+        grid-template-columns: auto auto;
+    }
+
+    #c-caja-1 {
+        margin-inline-end: 0.5em;
+    }
+    
+    #c-caja-3 {
+        display: none;
+    }
+    
+    #pie {
+        grid-template-columns: auto auto auto;
+    }
+    
+    #p-caja-1 {
+        margin-inline-end: 0.5em;
+    }
+
+    #p-caja-2 {
+        margin-inline-end: 0.5em;
+    }
+
+    #p-caja-4 {
+        display: none;
+    }
+}
+

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <title>Ejercicio Tailwind</title>
+</head>
+<body>
+  <div class="container mx-auto">
+    <header class="flex justify-between items-center sticky top-0 z-10 py-4 bg-slate-800">
+      <div class="flex-shrink-0 ml-6 cursor-pointer">
+        <i class="fas fa-film fa-2x text-yellow-500"></i>
+        <span class="pl-3 text-3xl font-semibold text-slate-200">Cine Trujillo</span>
+      </div>
+      <ul class="flex overflow-x-hidden mr-10 font-semibold">
+        <li class="mr-6 p-1 border-b-2 border-yellow-500">
+          <a class="cursor-default text-slate-200" href="#">Cartelera</a>
+        </li>
+        <li class="mr-6 p-1">
+          <a class="text-white hover:text-slate-300" href="#">Noticias</a>
+        </li>
+        <li class="mr-6 p-1">
+          <a class="text-white hover:text-slate-300" href="#">Ubicación</a>
+        </li>
+        <li class="mr-6 p-1">
+          <a class="text-white hover:text-slate-300" href="#">Nosotros</a>
+        </li>
+      </ul>
+    </header>
+    <div class="flex pb-4 bg-slate-100">
+      <main class="flex flex-col w-2/3 pl-6 pr-4 pt-4">
+
+        <article class="my-4 shadow">
+          <a href="#">
+            <img class="hover:opacity-75" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/76d2c838813889.57706fc74d976.jpg">
+          </a>
+          <div class="flex flex-col p-6 pt-2 bg-white">
+            <a href="#" class="my-2 text-sm font-bold uppercase border-b-2 border-yellow-500 text-slate-500">
+              Layout
+            </a>
+            <a href="#" class="pb-4 text-3xl font-serif font-bold hover:text-gray-700">
+              Lorem Ipsum Dolor Sit Amet Dolor Sit Amet
+            </a>
+            <p class="pb-3 text-sm">
+              By
+              <a href="#" class="hover:text-gray-800">David Jacobs</a>,
+              May 25, 2021
+            </p>
+            <p class="pb-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta dui. Ut eu iaculis massa. Sed ornare
+              ligula lacus, quis iaculis dui porta volutpat. In sit amet posuere magna..</p>
+            <a href="#" class="uppercase text-xs text-slate-600 hover:text-yellow-500">
+              Continue Reading <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="my-4 shadow">
+          <a href="#">
+            <img class="hover:opacity-75" src="https://www.themoviedb.org/t/p/original/yJzB12TMDNxoqjyyqoZGtetCRJa.jpg">
+          </a>
+          <div class="flex flex-col p-6 pt-2 bg-white">
+            <a href="#" class="my-2 text-sm font-bold uppercase border-b-2 border-yellow-500 text-slate-500">
+              Layout
+            </a>
+            <a href="#" class="pb-4 text-3xl font-serif font-bold hover:text-gray-700">
+              Lorem Ipsum Dolor Sit Amet Dolor Sit Amet
+            </a>
+            <p class="pb-3 text-sm">
+              By 
+              <a href="#" class="hover:text-gray-800">David Jacobs</a>,
+              May 25, 2021
+            </p>
+            <p class="pb-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta dui. Ut eu iaculis massa. Sed ornare ligula lacus, quis iaculis dui porta volutpat. In sit amet posuere magna..</p>
+            <a href="#" class="uppercase text-xs text-slate-600 hover:text-yellow-500">
+              Continue Reading <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="my-4 shadow">
+          <a href="#">
+            <img class="hover:opacity-75" src="https://i.ytimg.com/vi/ERSGsOhkGO8/maxresdefault.jpg">
+          </a>
+          <div class="flex flex-col p-6 pt-2 bg-white">
+            <a href="#" class="my-2 text-sm font-bold uppercase border-b-2 border-yellow-500 text-slate-500">
+              Layout
+            </a>
+            <a href="#" class="pb-4 text-3xl font-serif font-bold hover:text-gray-700">
+              Lorem Ipsum Dolor Sit Amet Dolor Sit Amet
+            </a>
+            <p class="pb-3 text-sm">
+              By
+              <a href="#" class="hover:text-gray-800">David Jacobs</a>,
+              May 25, 2021
+            </p>
+            <p class="pb-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta dui. Ut eu iaculis massa. Sed ornare
+              ligula lacus, quis iaculis dui porta volutpat. In sit amet posuere magna..</p>
+            <a href="#" class="uppercase text-xs text-slate-600 hover:text-yellow-500">
+              Continue Reading <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>        
+      </main>
+
+      <aside class="w-1/3 pl-4 pr-6 pt-8">
+        <section>
+          <form class="flex">
+            <input type="text" class="w-full px-3 py-2 rounded-l-lg focus:outline-none text-gray-800" placeholder="Buscar...">
+            <button class="px-2 rounded-r-lg focus:outline-none text-center text-xl text-gray-400 hover:text-gray-900 bg-white"><i class="fas fa-search"></i></button>
+          </form>
+        </section>
+
+        <section class="mt-8 text-white">
+          <div class="p-4 rounded-lg shadow-xl text-center bg-gradient-to-b from-slate-500 to-slate-300">
+            <h3 class="font-semibold text-lg">
+              Recibe la <b>CARTELERA</b> directamente en tu correo 
+            </h3>
+            <form>
+              <input type="email" placeholder="tucorreo@ejemplo.com" class="w-full mt-3 p-3 rounded-lg shadow border border-gray-400 focus:outline-none text-gray-800">
+              <button type="submit" class="w-full mt-4 p-4 rounded-lg focus:outline-none shadow font-semibold uppercase tracking-wider bg-yellow-600 hover:bg-yellow-500">Suscríbete</button>
+            </form>
+          </div>
+        </section>
+
+        <section class="mt-8">
+          <h3 class="mb-4 pb-2 text-2xl font-semibold border-b-2 border-yellow-500 text-slate-600">
+            Categorías
+          </h3>
+          <ul>
+            <li class="mb-1">
+              <a class="text-slate-900 hover:text-slate-500" href="#">Cine Peruano (23)</a>
+            </li>
+            <li class="mb-1">
+              <a class="text-slate-900 hover:text-slate-500" href="#">Actores/Actrices (44)</a>
+            </li>
+            <li class="mb-1">
+              <a class="text-slate-900 hover:text-slate-500" href="#">Directores (16)</a>
+            </li>
+            <li class="mb-1">
+              <a class="text-slate-900 hover:text-slate-500" href="#">Cine Latinoamericano (19)</a>
+            </li>
+          </ul>
+        </section>
+
+      </aside>
+    </div>
+    <section class="flex flex-col items-center p-4 bg-orange-400">
+      <div class="text-center text-white">
+        <h2 class="font-bold text-3xl">
+          ¿Quieres estar al día?
+        </h2>
+        <h3 class="text-xl">
+          Únete a nuestra lista de correos y recibe las últimas noticias
+        </h3>
+      </div>
+      <div>
+        <form class="my-4 flex">
+          <input class="p-4 rounded-l-lg focus:outline-none text-gray-800" placeholder="tucorreo@ejemplo.com">
+          <button class="p-4 rounded-r-lg font-bold uppercase tracking-wider text-white bg-green-600 hover:bg-green-500">Suscríbete</button>
+        </form>
+      </div>
+    </section>
+    <footer class="bg-slate-900">
+      <div class="flex flex-wrap text-white">
+        
+        <div class="w-1/3 p-5 border-r border-slate-800">
+          <div class="my-6 text-xl font-semibold">SOBRE NOSOTROS</div>
+          <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac est massa. Donec eget elementum sapien, tincidunt tempor nunc. Cras sodales id ipsum at convallis.</p>
+        </div>
+
+        <div class="w-1/3 p-5 text-center border-r border-slate-800">
+          <div class="my-6 text-xl font-semibold">CONTÁCTANOS</div>
+          <p class="text-gray-400">
+            Calle Brasil 873 <br>
+            Trujillo 13001 <br>
+            Perú <br>
+            <strong>Teléfono celular:</strong> +51 159 753 462 <br>
+            <strong>Correo electrónico:</strong> info@cinetrujillo.com
+          </p>
+          <div class="flex justify-center space-x-4 mt-6">
+            <button class="w-10 h-10 p-1 rounded bg-blue-500">
+              <i class="fab fa-facebook fa-2x"></i>
+            </button>
+            <button class="w-10 h-10 p-1 rounded bg-blue-400">
+              <i class="fab fa-twitter fa-2x"></i>
+            </button>
+            <button class="w-10 h-10 p-1 rounded bg-gray-700">
+              <i class="fab fa-github fa-2x"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="w-1/3 p-5">
+          <div class="my-6 text-xl font-semibold">SALÚDANOS!</div>
+            <form>
+              <input class="w-full h-10 mb-4 p-2 border-b-2 border-slate-700 bg-slate-800" type="email" placeholder="Tu correo">
+              <textarea class="w-full h-24 mb-6 px-2 pt-2 border-b-2 border-slate-700 bg-slate-800" placeholder="Tu mensaje"></textarea>
+              <button class="w-full px-4 py-2 rounded font-semibold tracking-wider bg-yellow-600 hover:bg-yellow-500" type="button">ENVIAR</button>
+            </form>
+        </div>
+
+      </div>
+    </footer>
+
+
+  </div>
+  <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>

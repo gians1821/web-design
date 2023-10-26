@@ -13,3 +13,23 @@ Carpintería Samana
 
 - Datos del cliente
 (Nombre, teléfono, consulta)
+
+
+
+
+
+Número de teléfono
+Correo electrónico
+Descripción de lo que quiere
+Armar el presupuesto
+
+
+
+
+
+Secciones de la página
+
+¿QUIÉN/QUÉ ES?
+FOTOS DE PRODUCTOS
+SERVICIOS
+CONTACTO

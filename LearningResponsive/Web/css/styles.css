@@ -1,64 +1,38 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    font-family: 'Ubuntu', sans-serif;
-    background-color: black;
-    color: white;
+.box {
+    width: 600px;
+    height: 500px;
+    border: 1px solid #000;
+    margin: 20px auto;
 }
 
-.sect1 {
-    width: 100%;
-    height: 100vh;
-    background: url("/imgs/bg.jpg");
-    background-size: cover;
-    background-attachment: fixed; /* Para que el background se quede fijo en el sitio*/
-    background-position: center; /* Para mover la posición de la imagen (si es grande"*/
-    padding-top: calc(50vh - 50px); /* Función para trabajar con varios sistemas de medida*/
-}
-
-.sect1 h2 {
-    background: blue;
-    color: wheat;
-    width: 300px;
-    height: 100px;
-    margin: auto;
+.item {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 40px;
     text-align: center;
-    line-height: 100px;
-    border-radius: 5%;
+    background: #999;
+    line-height: 80px;
 }
 
-.sect2 {
-    width: 100%;
-    text-align: center;
-    padding: 60px 40px;
+.static {
+
 }
 
-.sect2 p {
-    padding: 40px 0;
+.relative {
+
 }
 
-.sect3 {
-    width: 100%;
-    height: 100vh;
-    background: url("/imgs/wood-background.jpg");
-    background-size: cover;
-    background-attachment: fixed; /* Para que el background se quede fijo en el sitio*/
-    background-position: center; /* Para mover la posición de la imagen (si es grande"*/
-    padding-top: calc(50vh - 50px); /* Función para trabajar con varios sistemas de medida*/
+.absolute {
+
 }
 
-.sect3 h2 {
-    background: blue;
-    color: wheat;
-    width: 400px;
-    height: 100px;
-    margin: auto;
-    text-align: center;
-    line-height: 100px;
-    border-radius: 5%;
+.fixed {
+    
 }
-

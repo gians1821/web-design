@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
+    text-align: center;
 }
 
 .section {
@@ -13,6 +14,8 @@ body {
     background: #f2f2f2;
     margin: auto;
     padding: 2rem;
+    margin-top: 4rem;
+    border-radius: 2%;
 }
 
 .title {

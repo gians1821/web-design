@@ -1,27 +1,36 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: none;
+    padding: none;
     box-sizing: border-box;
 }
 
 body {
-    margin: auto;
-    color: white;
-    width: 75%;
-    height: 500px;
-    background-color: rgb(218, 169, 141);
-    background-size: cover;
-    background-repeat: no-repeat;
+    font-family: 'Inter', sans-serif;
 }
 
-.logo {
-    width: 10em;
+.section {
+    width: 35rem;
+    background: #f2f2f2;
     margin: auto;
-    display: block;
+    padding: 2rem;
 }
 
-h2 {
-    text-align: center;
-    color: black;
+.title {
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 800;
+    display: inline;
+    font-family: 'Playpen Sans', cursive;
+}
 
+.text {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 3rem;
+    font-weight: 300;
+}
+
+.link {
+    font-size: 16px;
+    font-weight: 500;
 }

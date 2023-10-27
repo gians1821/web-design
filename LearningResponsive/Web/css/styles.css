@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 header {
     background-color: black;
     color: white;    
@@ -61,10 +66,9 @@ header .container {
 }
 
 .menu .login button:hover {
-    padding: 0.5rem;
-    border: none;       /*Quitar o no*/
-    border-radius: 5%;
     background: rgb(156, 117, 102);
-    color: white;
-    font-weight: 700;
+}
+
+.menu .login button:active {
+    background: rgb(175, 123, 102);
 }

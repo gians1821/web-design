@@ -45,12 +45,13 @@ header .container {
 }
 
 .logo img {
-    width: 6rem;
+    width: 7rem;
 }
 
 .menu {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
+    font-size: 20px;
 }
 
 .menu .options {
@@ -67,7 +68,7 @@ header .container {
 .menu .icons {
     display: flex;
     justify-content: space-between;
-    gap: 0.5rem;
+    gap: 0.7rem;
 }
 
 .menu .icons a {
@@ -78,6 +79,11 @@ header .container {
 .menu .login {
     display: flex;
     align-items: center;
+}
+
+.menu .login button {
+    font-size: 14px;
+    padding: 0.5rem 1rem;
 }
 
 .inicio {
@@ -110,20 +116,22 @@ header .container {
 }
 
 .servicios {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
     text-align: center;
-    margin: 0 5rem;
-    padding-top: 5rem;
+    padding-top: 3rem;
+    width: 100%;
+}
+
+.servicios > * {
+    width: 80%;
+    margin: auto;
+    padding-top: 1rem;
 }
 
 .fa-screwdriver-wrench {
-    font-size: 10rem;
+    font-size: 9rem;
 }
 
 .servicios h2 {
-    width: 100%;
     font-size: 32px;
 }
 

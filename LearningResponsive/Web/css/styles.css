@@ -15,12 +15,6 @@ header .container {
     justify-content: space-between;
 }
 
-.logo {
-    position: relative;
-    background: rgba(255, 255, 255, 0.863);
-    left: 0;
-}
-
 .logo img {
     width: 6rem;
 }

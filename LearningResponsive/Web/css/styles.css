@@ -41,7 +41,7 @@ header .container {
     gap: 0.5rem;
 }
 
-.menu .icons li {
+.menu .icons a {
     display: flex;
     align-items: center;
 }

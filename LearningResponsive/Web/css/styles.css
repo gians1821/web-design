@@ -55,7 +55,7 @@ header .container {
     padding: 0.5rem;
     border: none;       /*Quitar o no*/
     border-radius: 5%;
-    background: rgb(165, 77, 42);
+    background: rgb(119, 98, 90);
     color: white;
     font-weight: 700;
 }
@@ -64,7 +64,7 @@ header .container {
     padding: 0.5rem;
     border: none;       /*Quitar o no*/
     border-radius: 5%;
-    background: rgb(197, 93, 51);
+    background: rgb(156, 117, 102);
     color: white;
     font-weight: 700;
 }

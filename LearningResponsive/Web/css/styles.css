@@ -4,15 +4,14 @@
     box-sizing: border-box;
 }
 
-p::selection {
-    background: green;;
+a {
+    display: block;
+    width: 250px;
+    background: brown;
     color: white;
-}
-
-p::first-letter {
-    font-size: 40px;
-}
-
-p::first-line {
-    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 40px;
 }

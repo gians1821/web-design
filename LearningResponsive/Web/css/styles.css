@@ -4,10 +4,6 @@
     font-family: 'Oswald', sans-serif;;
 }
 
-h1, h2 {
-    width: max-content;
-}
-
 a {
     text-decoration: none;
     color: white;
@@ -96,10 +92,9 @@ header .container {
     justify-content: center;
 }
 
-.inicio .container > * {
-    display: flex;
-    align-items: center;
-    margin: auto;
+.inicio .container {
+    text-align: center;
+    width: 100%;
 }
 
 .inicio .container > button {
@@ -119,12 +114,11 @@ header .container {
 .servicios {
     text-align: center;
     padding-top: 2rem;
-    width: 100%;
+    width: 80%;
+    margin: auto;
 }
 
 .servicios > * {
-    width: 80%;
-    margin: auto;
     padding-top: 1.5rem;
 }
 
@@ -161,4 +155,35 @@ header .container {
     background: rgba(0, 0, 0, 0.6);
     padding: 1rem;
     border-radius: 3%;
+}
+
+footer {
+    padding: 1rem;
+    background: rgb(223, 216, 216);
+}
+
+footer > p {
+    width: max-content;
+    margin: auto;
+}
+
+.opiniones {
+    text-align: center;
+    padding: 5rem;
+    width: 80%;
+    margin: auto;
+}
+
+.opiniones > h2 {
+    font-size: 56px;
+    margin-bottom: 3rem;
+}
+
+.opiniones > p {
+    margin-top: 2.5rem;
+}
+
+.images > * {
+    width: 200px;
+    margin: 0 3rem;
 }

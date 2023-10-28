@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Oswald', sans-serif;;
 }
 
 h1, h2 {
@@ -142,4 +143,22 @@ header .container {
 .wave {
     position: absolute;
     bottom: 0;
+}
+
+.experiencia {
+    background: url(/imgs/wood-background.jpg);
+    height: 100vh;
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+
+}
+
+.experiencia > * {
+    margin: auto;
+    font-size: 40px;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    border-radius: 3%;
 }

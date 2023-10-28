@@ -4,11 +4,16 @@
     box-sizing: border-box;
 }
 
+:root {
+    --ColorFondoPrimario: #c9e5af;
+    --ColorLetras: black;
+}
+
 a {
     display: block;
     width: 250px;
-    background: brown;
-    color: white;
+    background: var(--ColorFondoPrimario);
+    color: var(--ColorLetras);
     text-align: center;
     text-decoration: none;
     padding: 20px;

@@ -15,3 +15,14 @@
     text-align: center;
     text-decoration: none;
 }
+
+.boton:hover {
+    background: white;
+    color: black;
+    border: 1px solid wheat;
+}
+
+.boton:active {
+    background: blue;
+    color: white;
+}

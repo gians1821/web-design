@@ -4,15 +4,19 @@
     box-sizing: border-box;
 }
 
-p::selection {
-    background: green;;
-    color: white;
+:root {
+    --ColorFondoPrimario: #c9e5af;
+    --ColorLetras: black;
 }
 
-p::first-letter {
-    font-size: 40px;
-}
-
-p::first-line {
-    font-size: 24px;
+a {
+    display: block;
+    width: 250px;
+    background: var(--ColorFondoPrimario);
+    color: var(--ColorLetras);
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 40px;
 }

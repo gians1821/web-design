@@ -4,19 +4,9 @@
     box-sizing: border-box;
 }
 
-:root {
-    --ColorFondoPrimario: #c9e5af;
-    --ColorLetras: black;
-}
-
-a {
-    display: block;
-    width: 250px;
-    background: var(--ColorFondoPrimario);
-    color: var(--ColorLetras);
-    text-align: center;
-    text-decoration: none;
-    padding: 20px;
-    border-radius: 20px;
-    margin-top: 40px;
+.cuadrado {
+    margin: 60px;
+    width: 1200px;
+    height: 500px;
+    background: blue;
 }

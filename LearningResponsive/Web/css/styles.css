@@ -16,13 +16,26 @@
     text-decoration: none;
 }
 
-.boton:hover {
-    background: white;
-    color: black;
-    border: 1px solid wheat;
-}
-
-.boton:active {
+#numero1:target {
     background: blue;
     color: white;
+}
+
+#numero2:target {
+    background: red;
+    color: white;
+}
+
+#numero3:target {
+    background: green;
+    color: white;
+}
+
+input {
+    display: block;
+    padding: 10px;    
+}
+
+input:focus {
+    outline-color: green;
 }

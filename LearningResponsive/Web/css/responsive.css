@@ -1,0 +1,36 @@
+@media (max-width: 1536px) {
+    .container {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1280px) {
+    .container {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        width: 90%;
+    }
+
+    .boton {
+        width: 30%;
+    }
+}
+
+@media (max-height: 768px) {
+    .container {
+        height: 1rem auto;
+    }
+    html {
+        height: auto;
+    }
+}

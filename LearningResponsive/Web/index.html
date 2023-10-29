@@ -3,12 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Variables</title>
+    <title>Media Queries</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <a href="#">Ir a información</a>
+    <div class="container">
+        <div class="contenido">
+            <h1 class="titulo">Formulario</h1>
+            <form>
+                <label class="texto" for="nombre">Nombre <span class="obligatorio">*</span></label>
+                <input class="texto" type="text" id="nombre" placeholder="Escribe tu nombre" required>
+                <label class="texto" for="email">Email <span class="obligatorio">*</span></label>
+                <input class="texto" type="text" id="email" placeholder="Escribe tu email" required>
+                <label class="texto" for="website">Sitio web</label>
+                <input class="texto" type="text" id="website" placeholder="Escribe la URL de tu web">
+                <label class="texto" for="asunto">Asunto <span class="obligatorio">*</span></label>
+                <input class="texto" type="text" id="asunto" placeholder="Escribe un asunto" required>
+                <label class="texto" for="mensaje">Mensaje <span class="obligatorio">*</span></label>
+                <textarea class="texto" id="mensaje" placeholder="Deja aquí tu comentario..." rows="8" required></textarea>
+                <input class="boton texto" type="submit" value="ENVIAR">
+            </form>
+            <p class="aviso texto"><span class="obligatorio">*</span> Los campos son obligatorios</p>
+        </div>
+    </div>
 
 </body>
 </html>

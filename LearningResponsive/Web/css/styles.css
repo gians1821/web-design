@@ -1,49 +1,95 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
 }
 
-.container {
-    border: 10px solid black;
-    height: 500px;
+.titulo {
+    font-size: 34px;
+}
+
+.texto {
+    font-size: 20px;
+}
+
+:root {
+    --colorTextos: #2d2d29;
+    --colorBotones: #215a6d; 
+    --colorFondo: #3ca2a2;
+    --paddingSecciones: 60px 0;
+    --marginElementos: 40px;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: var(--paddingSecciones);
+}
+
+.menu {
+    padding: 0;
     display: flex;
-    /*flex-wrap: nowrap;*/
-    /*flex-wrap: wrap;*/
-    flex-wrap: wrap-reverse;
-    /*flex-direction: row;*/
-    /*flex-direction: row-reverse;*/
-    /*flex-direction: column;*/
-    flex-direction: column-reverse;
-    /*flex-wrap: wrap-reverse;*/
-    /*justify-content: flex-start;*/
-    /*justify-content: flex-end;*/
     justify-content: space-between;
-    /*align-items: flex-start;*/
-    /*align-items: flex-end;*/
-    /*align-items: center;*/
-    align-items: stretch;
+    align-items: center;
+    height: 120px;
 }
 
-.items {
-    font-size: 30px;
+.logo {
+    height: 120px;
+}
+
+.logo img {
+    display: block;
+    height: 100%;
+}
+
+.enlaces {
+    display: flex;
+    gap: 15px;
+}
+
+.enlaces li {
+    list-style: none;;
+    display: inline-block;
+}
+
+.enlaces a {
+    text-decoration: none;
+    color: var(--colorTextos);
+}
+
+/*  HERO  */
+
+.hero {
+    height: 600px;
+    background-image: url(/imgs/wood-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.contenedor-textos {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.281);
     color: white;
-    width: 200px;
-    height: 200px;
 }
 
-.item1 {
-    background: rebeccapurple;
-}
-
-.item2 {
-    background: blue;
-}
-
-.item3 {
-    background: green;
-}
-
-.item4 {
-    background: orange;
+.boton {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+    background: var(--colorBotones);
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
 }

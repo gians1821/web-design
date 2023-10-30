@@ -164,3 +164,28 @@ footer .texto-beneficio {
 .redes-sociales i {
     font-size: 30px;
 }
+
+@media screen and (max-width: 800px) {
+    .menu {
+        flex-direction: column;
+        height: 160px;
+        justify-content: space-evenly;
+    }
+    .hero h1 {
+        font-size: 36px;
+        margin-top: 50px;
+    }
+    .hero p {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .boton {
+        margin-bottom: 50px;
+    }
+    .beneficio {
+        margin-bottom: 40px;
+    }
+    .contenedor-imagenes img {
+        width: 90%;
+    }
+}

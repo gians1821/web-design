@@ -146,3 +146,21 @@
     box-shadow: 0 0 8px rgb(0, 0, 4);
     margin-bottom: var(--marginElementos);
 }
+
+footer .titulo-beneficio {
+    color: var(--colorTitulos);
+
+}
+footer .texto-beneficio {
+    color: black;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redes-sociales i {
+    font-size: 30px;
+}

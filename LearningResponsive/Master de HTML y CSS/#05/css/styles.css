@@ -2,30 +2,95 @@
     margin: 0;
 }
 
-div {
-    text-align: center;
-    border: 1px solid black;
-}
-
-.titulo {
-    background-color: blue;
+body > * {
+    margin: 1rem;
+    background: black;
     color: white;
-    padding: 20px;
-    width: 20em;
 }
 
-.enlace {
-    display: inline-block;
-    background-color: #f2f2f2;
+h1 {
+    background: blue;
+    color: white;
+    width: 16rem;
+}
+
+h2 {
+    background: red;
+    color: white;
+    width: 20rem;
+}
+
+h3 {
+    background: green;
+    color: white;
+    width: 24rem;
+}
+
+p {
+    width: auto;
+}
+
+.div {
+    background: gray;
     color: black;
-    padding: 1em;
-    margin: 2em;
-    width: 15em;
-    border: 1px solid #dddddd;
-    text-align: center;
-    transition: padding 0.5s ease;
+    margin: 0px;
+    padding: 10px 0;
+    width: 100vw;
 }
 
-.enlace:hover {
-    padding: 2.1em;
+.inline-objects {
+    background: white;
+    display: inline-block;
+    position: relative;
+    left: 10%;
+    width: 80%;
+    margin: 1rem auto;
+    align-items: center;
+}
+
+span {
+    color: black;
+}
+
+img {
+    width: 300px;
+    border: 5px solid greenyellow;
+    border-radius: 5px;
+    background: black;
+    padding: 5px;
+    height: 100%;
+}
+
+a {
+    width: 500px;           /* Por mucho que se modifique esto, no cambia el width*/
+    border: 5px solid greenyellow;
+    border-radius: 5px;
+    background: black;
+    padding: 5px;
+    height: 100%;
+    color: white;
+}
+
+button {
+    width: 100px;
+    border: 5px solid greenyellow;
+    border-radius: 5px;
+    background: black;
+    padding: 5px;
+    height: 100%;
+    color: white;
+}
+
+ul {
+    padding: 2rem;
+}
+
+ol {
+    padding: 1rem 5rem;
+}
+
+li {
+    background: gray;
+    color: white;
+    margin: 3px;
 }

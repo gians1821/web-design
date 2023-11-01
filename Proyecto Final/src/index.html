@@ -7,6 +7,10 @@
 </head>
 <body class="bg-slate-300">
 
+  <div class="absolute flex h-screen w-full bg-red-200 dark:bg-red-950 transition-colors items-center justify-center">
+    <button onclick="handleClick()" class="p-4 bg-red-400 rounded-md w-36 font-semibold hover:bg-red-300 transition duration-300">Dark Mode</button>
+  </div>
+
   <header>
     <img src="/imgs/logo-magia-madera.png" alt="logo-magia-madera">
     <ul>
@@ -66,6 +70,21 @@
     <p>COPYRIGHT</p>
   </footer>
 
+  <script src="/src/index.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      content: ["./src/**/*.{html,js}"],
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <script src="/tailwind.config.js"></script>
 </body>
 </html>

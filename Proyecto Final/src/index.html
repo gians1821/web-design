@@ -5,21 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carpintería Samana</title>
 </head>
-<body class="bg-slate-300">
+<body>
 
-  <div class="absolute flex h-screen w-full bg-red-200 dark:bg-red-950 transition-colors items-center justify-center">
-    <button onclick="handleClick()" class="p-4 bg-red-400 rounded-md w-36 font-semibold hover:bg-red-300 transition duration-300">Dark Mode</button>
-  </div>
+  <header class="bg-slate-200">
+    
+    <div class="flex justify-between items-center h-28 lg:w-[80%] lg:m-auto"> 
+      
+      <img class="w-28 ml-4" src="/imgs/logo-magia-madera.png" alt="logo-magia-madera">
+      <div class="md:hidden">
+        <i onclick="toggleMenu()" class="fa-solid fa-bars mr-8 cursor-pointer text-3xl"></i>
+      </div>
 
-  <header>
-    <img src="/imgs/logo-magia-madera.png" alt="logo-magia-madera">
-    <ul>
-      <li>INICIO</li>
-      <li>¿QUIÉNES SOMOS?</li>
-      <li>REALIZA TU CONSULTA</li>
-      <li>PRODUCTOS</li>
-      <li>SERVICIOS</li>
-    </ul>
+      <ul id="menu" class="md:flex md:relative md:top-auto md:h-auto md:w-auto md:bg-transparent md:transition-none fixed transition-all duration-500 text-center -top-full w-full h-max gap-2 mr-8 bg-slate-300">
+        <li><a class="block p-8 md:p-1 hover:bg-slate-100" href="#">INICIO</a></li>
+        <li><a class="block p-8 md:p-1 hover:bg-slate-100" href="#">¿QUIÉNES SOMOS?</a></li>
+        <li><a class="block p-8 md:p-1 hover:bg-slate-100" href="#">REALIZA TU CONSULTA</a></li>
+        <li><a class="block p-8 md:p-1 hover:bg-slate-100" href="#">PRODUCTOS</a></li>
+        <li><a class="block p-8 md:p-1 hover:bg-slate-100" href="#">SERVICIOS</a></li>
+      </ul>
+
+    </div>
+
   </header>
 
   <main>
@@ -70,6 +76,7 @@
     <p>COPYRIGHT</p>
   </footer>
 
+  <script src="https://kit.fontawesome.com/3cd8c90f36.js" crossorigin="anonymous"></script>
   <script src="/src/index.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -85,6 +92,5 @@
       }
     }
   </script>
-  <script src="/tailwind.config.js"></script>
 </body>
 </html>

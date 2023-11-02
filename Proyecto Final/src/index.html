@@ -7,16 +7,17 @@
 </head>
 <body>
 
-  <header class="bg-slate-200">
+  <header class="fixed bg-slate-200 w-full z-10">
     
     <div class="flex justify-between items-center h-28 lg:w-[80%] lg:m-auto"> 
       
       <img class="w-28 ml-4" src="/imgs/logo-magia-madera.png" alt="logo-magia-madera">
+      
       <div class="md:hidden">
         <i onclick="toggleMenu()" class="fa-solid fa-bars mr-8 cursor-pointer text-3xl"></i>
       </div>
 
-      <ul id="menu" class="md:flex md:relative md:top-auto md:h-auto md:w-auto md:bg-transparent md:transition-none fixed transition-all duration-500 text-center -top-full w-full h-max gap-2 mr-8 bg-slate-300">
+      <ul id="menu" class="md:flex md:relative md:top-auto md:h-auto md:w-auto md:bg-transparent md:transition-none md:right-0 transition-all duration-500 sm fixed text-center -right-full w-full h-max gap-2 top-28 bg-slate-300">
         <li><a class="block p-8 md:p-1 hover:bg-slate-100" href="#">INICIO</a></li>
         <li><a class="block p-8 md:p-1 hover:bg-slate-100" href="#">¿QUIÉNES SOMOS?</a></li>
         <li><a class="block p-8 md:p-1 hover:bg-slate-100" href="#">REALIZA TU CONSULTA</a></li>
@@ -29,13 +30,16 @@
   </header>
 
   <main>
-    <section>
-      <img src="/imgs/carpinteria-2.jpg" alt="carpinteria-2">
+    
+    <section class="before:content-[''] before:bg-[rgb(0,0,0,0.5)] before:absolute before:inset-0 relative bg-hero-pattern h-[80vh] w-full bg-cover bg-center bg-gradient-to-t flex justify-center items-center">
+      <h1 class="relative text-white font-bold text-8xl">HOLA</h1>
     </section>
+
     <section>
       <h2>¿Quiénes somos?</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt architecto ab nulla enim autem, fugit qui amet voluptatibus repellat laborum, odio consectetur rerum iste. Amet deserunt magni non facilis dolores.</p>
     </section>
+
     <section>
       <h2>Realiza tu consulta</h2>
       <form action="">
@@ -50,11 +54,13 @@
         <input type="submit" value="Enviar">
       </form>
     </section>
+    
     <section>
       <img src="/imgs/herramientas.jpg" alt="">
       <img src="/imgs/herramientas.jpg" alt="">
       <img src="/imgs/herramientas.jpg" alt="">
     </section>
+    
     <section>
       <ul>
         <li>SERVICIO 1</li>
@@ -62,6 +68,7 @@
         <li>SERVICIO 3</li>
       </ul>
     </section>
+
   </main>
 
   <footer>
@@ -86,7 +93,10 @@
       theme: {
         extend: {
           colors: {
-            clifford: '#da373d',
+            'hero': "linear-gradient(black, black)",
+          },
+          backgroundImage: {
+            'hero-pattern': "url(../imgs/carpinteria-2.jpg)",
           }
         }
       }

@@ -1,4 +1,4 @@
 const toggleMenu = () => {
-    document.querySelector("#menu").classList.toggle('top-28')
-    document.querySelector("#menu").classList.toggle('-top-full')
+    document.querySelector("#menu").classList.toggle('right-0')
+    document.querySelector("#menu").classList.toggle('-right-full')
 }

@@ -3,26 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Noto+Sans:wght@100;300;400;500;700&family=Outfit:wght@100;300;400;500;700&display=swap" rel="stylesheet">
   <title>Carpintería Samana</title>
 </head>
-<body>
+<body class="font-noto">
 
-  <header class="fixed bg-slate-200 w-full z-10">
+  <header class="fixed bg-primary w-full z-10">
     
     <div class="flex justify-between items-center h-28 lg:w-[80%] lg:m-auto"> 
       
       <img class="w-28 ml-4" src="/imgs/logo-magia-madera.png" alt="logo-magia-madera">
       
       <div class="md:hidden">
-        <i onclick="toggleMenu()" class="fa-solid fa-bars mr-8 cursor-pointer text-3xl"></i>
+        <i onclick="toggleMenu()" class="fa-solid fa-bars mr-8 cursor-pointer text-[2rem]"></i>
       </div>
 
-      <ul id="menu" class="md:flex md:relative md:top-auto md:h-auto md:w-auto md:bg-transparent md:transition-none md:right-0 transition-all duration-500 sm fixed text-center -right-full w-full h-max gap-2 top-28 bg-slate-300">
-        <li><a class="block p-8 md:p-1 hover:bg-slate-100" href="#">INICIO</a></li>
-        <li><a class="block p-8 md:p-1 hover:bg-slate-100" href="#">¿QUIÉNES SOMOS?</a></li>
-        <li><a class="block p-8 md:p-1 hover:bg-slate-100" href="#">REALIZA TU CONSULTA</a></li>
-        <li><a class="block p-8 md:p-1 hover:bg-slate-100" href="#">PRODUCTOS</a></li>
-        <li><a class="block p-8 md:p-1 hover:bg-slate-100" href="#">SERVICIOS</a></li>
+      <ul id="menu" class="md:flex md:relative md:top-auto md:h-auto md:w-auto md:bg-transparent md:transition-none md:right-0 transition-all duration-500 fixed text-center -right-full w-full h-max gap-2 top-28 bg-slate-300 md:mr-4">
+        <li><a class="block p-11 md:p-1 text-xl hover:bg-slate-100" href="#">INICIO</a></li>
+        <li><a class="block p-11 md:p-1 text-xl hover:bg-slate-100" href="#">¿QUIÉNES SOMOS?</a></li>
+        <li><a class="block p-11 md:p-1 text-xl hover:bg-slate-100" href="#">REALIZA TU CONSULTA</a></li>
+        <li><a class="block p-11 md:p-1 text-xl hover:bg-slate-100" href="#">PRODUCTOS</a></li>
+        <li><a class="block p-11 md:p-1 text-xl hover:bg-slate-100" href="#">SERVICIOS</a></li>
       </ul>
 
     </div>
@@ -35,9 +38,12 @@
       <h1 class="relative text-white font-bold text-8xl">HOLA</h1>
     </section>
 
-    <section>
-      <h2>¿Quiénes somos?</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt architecto ab nulla enim autem, fugit qui amet voluptatibus repellat laborum, odio consectetur rerum iste. Amet deserunt magni non facilis dolores.</p>
+    <section class="flex flex-col justify-center bg-primary px-10 text-center w-full gap-12 py-24">
+      <h2 class="text-4xl font-medium">¿Quiénes somos?</h2>
+      <div class="w-max m-auto">
+        <img class="object-cover object-right rounded-full w-80 h-80"  src="/imgs/carpinteria.jpg" alt="">
+      </div>
+      <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt architecto ab nulla enim autem, fugit qui amet voluptatibus repellat laborum, odio consectetur rerum iste. Amet deserunt magni non facilis dolores.</p>
     </section>
 
     <section>
@@ -91,9 +97,15 @@
       darkMode: 'class',
       content: ["./src/**/*.{html,js}"],
       theme: {
+        fontFamily: {
+          'lato': 'Lato, sans-serif',
+          'outfit': 'Outfit, sans-serif',
+          'noto':'Noto Sans, sans-serif',
+        },
         extend: {
           colors: {
             'hero': "linear-gradient(black, black)",
+            'primary': 'rgb(226 232 240)',
           },
           backgroundImage: {
             'hero-pattern': "url(../imgs/carpinteria-2.jpg)",

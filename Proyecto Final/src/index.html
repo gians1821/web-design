@@ -8,66 +8,81 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Noto+Sans:wght@100;300;400;500;700&family=Outfit:wght@100;300;400;500;700&display=swap" rel="stylesheet">
   <title>Carpintería Samana</title>
 </head>
-<body class="font-noto">
+<body class="font-lato">
 
   <header class="fixed bg-primary w-full z-10">
-    
-    <div class="flex justify-between items-center h-28 lg:w-[80%] lg:m-auto"> 
-      
-      <img class="w-28 ml-4" src="/imgs/logo-magia-madera.png" alt="logo-magia-madera">
-      
+  
+    <div class="flex justify-between items-center h-20 lg:w-[80%] lg:m-auto">
+  
+      <img class="w-20 ml-4" src="/imgs/logo-magia-madera.png" alt="logo-magia-madera">
+  
       <div class="md:hidden">
-        <i onclick="toggleMenu()" class="fa-solid fa-bars mr-8 cursor-pointer text-[2rem]"></i>
+        <i onclick="toggleMenu()" class="fa-solid fa-bars mr-6 cursor-pointer text-[2rem]"></i>
       </div>
-
-      <ul id="menu" class="md:flex md:relative md:top-auto md:h-auto md:w-auto md:bg-transparent md:transition-none md:right-0 transition-all duration-500 fixed text-center -right-full w-full h-max gap-2 top-28 bg-slate-300 md:mr-4">
+  
+      <ul id="menu"
+        class="md:flex md:relative md:top-auto md:mr-4 md:h-auto md:w-auto md:bg-transparent md:transition-none md:right-0 transition-all duration-500 fixed text-center -right-full w-full h-max gap-2 top-20 bg-slate-300">
         <li><a class="block p-11 md:p-1 text-xl hover:bg-slate-100" href="#">INICIO</a></li>
         <li><a class="block p-11 md:p-1 text-xl hover:bg-slate-100" href="#">¿QUIÉNES SOMOS?</a></li>
         <li><a class="block p-11 md:p-1 text-xl hover:bg-slate-100" href="#">REALIZA TU CONSULTA</a></li>
         <li><a class="block p-11 md:p-1 text-xl hover:bg-slate-100" href="#">PRODUCTOS</a></li>
         <li><a class="block p-11 md:p-1 text-xl hover:bg-slate-100" href="#">SERVICIOS</a></li>
       </ul>
-
+  
     </div>
-
+  
   </header>
 
   <main>
     
-    <section class="before:content-[''] before:bg-[rgb(0,0,0,0.5)] before:absolute before:inset-0 relative bg-hero-pattern h-[80vh] w-full bg-cover bg-center bg-gradient-to-t flex justify-center items-center">
+    <section
+      class="before:content-[''] before:bg-[rgb(0,0,0,0.5)] before:absolute before:inset-0 relative bg-hero-pattern h-[80vh] w-full bg-cover bg-center bg-gradient-to-t flex justify-center items-center">
       <h1 class="relative text-white font-bold text-8xl">HOLA</h1>
     </section>
-
+    
     <section class="flex flex-col justify-center bg-primary px-10 text-center w-full gap-12 py-24">
-      <h2 class="text-4xl font-medium">¿Quiénes somos?</h2>
+      <h2 class="text-3xl font-medium">¿Quiénes somos?</h2>
       <div class="w-max m-auto">
-        <img class="object-cover object-right rounded-full w-80 h-80"  src="/imgs/carpinteria.jpg" alt="">
+        <img class="object-cover object-right rounded-full w-80 h-80" src="/imgs/carpinteria.jpg" alt="">
       </div>
-      <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt architecto ab nulla enim autem, fugit qui amet voluptatibus repellat laborum, odio consectetur rerum iste. Amet deserunt magni non facilis dolores.</p>
+      <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt architecto ab nulla enim autem,
+        fugit qui amet voluptatibus repellat laborum, odio consectetur rerum iste. Amet deserunt magni non facilis dolores.
+      </p>
     </section>
-
-    <section>
-      <h2>Realiza tu consulta</h2>
-      <form action="">
-        <label for="name">Nombre:</label>
-        <input type="text" id="name">
-        <label for="cellphone">Número de Celular:</label>
-        <input type="text" id="cellphone">
-        <label for="email">Correo Electrónico</label>
-        <input type="text" id="email">
-        <label for="description">Descripción de lo que desea:</label>
-        <textarea name="description" id="" cols="30" rows="10"></textarea>
-        <input type="submit" value="Enviar">
+    
+    <section class="flex flex-col bg-secondary py-12 px-12 gap-8">
+      <h2 class="text-3xl font-medium m-auto text-center">Realiza tu consulta</h2>
+      <form class="flex flex-col gap-4" action="">
+        <label class="font-bold" for="name">
+          Nombre:
+          <input class="block w-full font-normal px-4 py-2 rounded-xl mt-1" type="text" id="name" placeholder="Escribe tu nombre..." required>
+        </label>
+        <label class="font-bold" for="cellphone">
+          Número de Celular:
+          <input class="block w-full font-normal px-4 py-2 rounded-xl mt-1" type="text" id="cellphone" placeholder="Escribe tu celular..." required>
+        </label>
+        <label class="font-bold" for="email">
+          Correo Electrónico:
+          <input class="block w-full font-normal px-4 py-2 rounded-xl mt-1" type="text" id="email" placeholder="Escribe tu correo electrónico..." required>
+        </label>
+        <label class="font-bold" for="description">
+          Descripción de lo que desea:
+          <textarea class="block w-full font-normal px-4 py-2 rounded-xl mt-1" id="description" rows="10" placeholder="Escribe tu consulta..."
+            required></textarea>
+        </label>
+        <input class="w-32 m-auto text-lg py-1 rounded-xl bg-black text-white mt-4" type="submit" value="Enviar">
       </form>
     </section>
     
-    <section>
+    <section class="flex flex-col bg-primary py-20 px-12 gap-8">
+      <h2 class="text-3xl font-medium m-auto text-center">Herramientas con las que trabajamos</h2>
       <img src="/imgs/herramientas.jpg" alt="">
       <img src="/imgs/herramientas.jpg" alt="">
       <img src="/imgs/herramientas.jpg" alt="">
     </section>
     
-    <section>
+    <section class="flex flex-col bg-secondary py-20 px-12 gap-8">
+      <h2 class="text-3xl font-medium m-auto text-center">Nuestros servicios</h2>
       <ul>
         <li>SERVICIO 1</li>
         <li>SERVICIO 2</li>
@@ -106,6 +121,7 @@
           colors: {
             'hero': "linear-gradient(black, black)",
             'primary': 'rgb(226 232 240)',
+            'secondary': 'rgb(203 213 225)',
           },
           backgroundImage: {
             'hero-pattern': "url(../imgs/carpinteria-2.jpg)",

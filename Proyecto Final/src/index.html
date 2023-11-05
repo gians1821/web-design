@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Noto+Sans:wght@100;300;400;500;700&family=Outfit:wght@100;300;400;500;700&display=swap" rel="stylesheet">
   <title>Carpintería Samana</title>
 </head>
-<body class="font-lato">
+<body class="font-noto">
 
   <header class="fixed bg-primary w-full z-10">
   
@@ -21,12 +21,12 @@
       </div>
   
       <ul id="menu"
-        class="md:flex md:relative md:top-auto md:mr-4 md:h-auto md:w-auto md:bg-transparent md:transition-none md:right-0 transition-all duration-500 fixed text-center -right-full w-full h-max gap-2 top-20 bg-slate-300">
-        <li><a class="block p-11 md:p-1 text-xl hover:bg-slate-100" href="#">INICIO</a></li>
-        <li><a class="block p-11 md:p-1 text-xl hover:bg-slate-100" href="#">¿QUIÉNES SOMOS?</a></li>
-        <li><a class="block p-11 md:p-1 text-xl hover:bg-slate-100" href="#">REALIZA TU CONSULTA</a></li>
-        <li><a class="block p-11 md:p-1 text-xl hover:bg-slate-100" href="#">PRODUCTOS</a></li>
-        <li><a class="block p-11 md:p-1 text-xl hover:bg-slate-100" href="#">SERVICIOS</a></li>
+        class="md:flex md:relative md:top-auto md:mr-4 md:h-auto md:w-auto md:bg-transparent md:transition-none md:right-0 transition-all duration-500 fixed text-center -right-full w-full h-max gap-2 top-20 bg-secondary">
+        <li><a class="block p-11 md:p-1 text-xl hover:bg-primary" href="#">INICIO</a></li>
+        <li><a class="block p-11 md:p-1 text-xl hover:bg-primary" href="#">¿QUIÉNES SOMOS?</a></li>
+        <li><a class="block p-11 md:p-1 text-xl hover:bg-primary" href="#">REALIZA TU CONSULTA</a></li>
+        <li><a class="block p-11 md:p-1 text-xl hover:bg-primary" href="#">PRODUCTOS</a></li>
+        <li><a class="block p-11 md:p-1 text-xl hover:bg-primary" href="#">SERVICIOS</a></li>
       </ul>
   
     </div>
@@ -82,7 +82,7 @@
     </section>
     
     <section class="flex flex-col bg-secondary py-20 px-12 gap-8">
-      <h2 class="text-3xl font-medium m-auto text-center">Nuestros servicios</h2>
+      <h2 class="text-3xl font-medium m-auto text-center">NUESTROS SERVICIOS</h2>
       <ul>
         <li>SERVICIO 1</li>
         <li>SERVICIO 2</li>
@@ -92,9 +92,8 @@
 
   </main>
 
-  <footer>
-    <img src="/imgs/carpinteria.jpg" alt="carpinteria">
-    <h2>CONTÁCTANOS</h2>
+  <footer class="flex flex-col bg-primary py-20 px-12 gap-8">
+    <h2 class="text-3xl font-medium m-auto text-center">CONTÁCTANOS</h2>
     <p>
       [LUGAR DE LA EMPRESA] Trujillo, Perú <br>
       Email: agroals@agroals.com <br>
@@ -119,9 +118,8 @@
         },
         extend: {
           colors: {
-            'hero': "linear-gradient(black, black)",
-            'primary': 'rgb(226 232 240)',
-            'secondary': 'rgb(203 213 225)',
+            'primary': '#a29d7f',
+            'secondary': '#d4cfa5',
           },
           backgroundImage: {
             'hero-pattern': "url(../imgs/carpinteria-2.jpg)",

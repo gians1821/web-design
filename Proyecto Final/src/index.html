@@ -10,9 +10,10 @@
 </head>
 <body class="font-noto">
 
+  <!-- ENCABEZADO -->
   <header class="fixed bg-primary w-full z-10">
   
-    <div class="flex justify-between items-center h-20 lg:w-[80%] lg:m-auto">
+    <div class="flex justify-between items-center h-20 md:w-[80%] md:m-auto">
   
       <img class="w-20 ml-4" src="/imgs/logo-magia-madera.png" alt="logo-magia-madera">
   
@@ -33,6 +34,8 @@
   
   </header>
 
+
+  <!-- APARTADO PRINCIPAL -->
   <main>
     
     <section
@@ -40,67 +43,78 @@
       <h1 class="relative text-white font-bold text-8xl">HOLA</h1>
     </section>
     
-    <section class="flex flex-col justify-center bg-primary px-10 text-center w-full gap-12 py-24">
-      <h2 class="text-3xl font-medium">¿Quiénes somos?</h2>
-      <div class="w-max m-auto">
-        <img class="object-cover object-right rounded-full w-80 h-80" src="/imgs/carpinteria.jpg" alt="">
+    <section class="bg-primary">
+      <div class="contenido md:w-[80%] lg:w-[60%] flex flex-col justify-center px-10 text-center md:mx-auto gap-12 py-24">
+        <h2 class="text-3xl font-medium">¿Quiénes somos?</h2>
+        <div class="w-max m-auto">
+          <img class="object-cover object-right rounded-full w-80 h-80" src="/imgs/carpinteria.jpg" alt="">
+        </div>
+        <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt architecto ab nulla enim autem,
+          fugit qui amet voluptatibus repellat laborum, odio consectetur rerum iste. Amet deserunt magni non facilis dolores.
+        </p>
       </div>
-      <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt architecto ab nulla enim autem,
-        fugit qui amet voluptatibus repellat laborum, odio consectetur rerum iste. Amet deserunt magni non facilis dolores.
-      </p>
     </section>
     
-    <section class="flex flex-col bg-secondary py-12 px-12 gap-8">
-      <h2 class="text-3xl font-medium m-auto text-center">Realiza tu consulta</h2>
-      <form class="flex flex-col gap-4" action="">
-        <label class="font-bold" for="name">
-          Nombre:
-          <input class="block w-full font-normal px-4 py-2 rounded-xl mt-1" type="text" id="name" placeholder="Escribe tu nombre..." required>
-        </label>
-        <label class="font-bold" for="cellphone">
-          Número de Celular:
-          <input class="block w-full font-normal px-4 py-2 rounded-xl mt-1" type="text" id="cellphone" placeholder="Escribe tu celular..." required>
-        </label>
-        <label class="font-bold" for="email">
-          Correo Electrónico:
-          <input class="block w-full font-normal px-4 py-2 rounded-xl mt-1" type="text" id="email" placeholder="Escribe tu correo electrónico..." required>
-        </label>
-        <label class="font-bold" for="description">
-          Descripción de lo que desea:
-          <textarea class="block w-full font-normal px-4 py-2 rounded-xl mt-1" id="description" rows="10" placeholder="Escribe tu consulta..."
-            required></textarea>
-        </label>
-        <input class="w-32 m-auto text-lg py-1 rounded-xl bg-black text-white mt-4" type="submit" value="Enviar">
-      </form>
+    <section class="bg-secondary">
+      <div class="contenido md:w-[80%] md:mx-auto flex flex-col py-12 px-12 gap-8">
+        <h2 class="text-3xl font-medium m-auto text-center">Realiza tu consulta</h2>
+        <form class="flex flex-col gap-4" action="">
+          <label class="font-bold" for="name">
+            Nombre:
+            <input class="block w-full font-normal px-4 py-2 rounded-xl mt-1" type="text" id="name" placeholder="Escribe tu nombre..." required>
+          </label>
+          <label class="font-bold" for="cellphone">
+            Número de Celular:
+            <input class="block w-full font-normal px-4 py-2 rounded-xl mt-1" type="text" id="cellphone" placeholder="Escribe tu celular..." required>
+          </label>
+          <label class="font-bold" for="email">
+            Correo Electrónico:
+            <input class="block w-full font-normal px-4 py-2 rounded-xl mt-1" type="text" id="email" placeholder="Escribe tu correo electrónico..." required>
+          </label>
+          <label class="font-bold" for="description">
+            Descripción de lo que desea:
+            <textarea class="block w-full font-normal px-4 py-2 rounded-xl mt-1" id="description" rows="10" placeholder="Escribe tu consulta..."
+              required></textarea>
+          </label>
+          <input class="w-32 m-auto text-lg py-1 rounded-xl bg-black text-white mt-4" type="submit" value="Enviar">
+        </form>
+      </div>
     </section>
     
-    <section class="flex flex-col bg-primary py-20 px-12 gap-8">
-      <h2 class="text-3xl font-medium m-auto text-center">Herramientas con las que trabajamos</h2>
-      <img src="/imgs/herramientas.jpg" alt="">
-      <img src="/imgs/herramientas.jpg" alt="">
-      <img src="/imgs/herramientas.jpg" alt="">
+    <section class="bg-primary">
+      <div class="contenido md:w-[80%] lg:w-[60%] md:mx-auto flex flex-col py-20 px-12 gap-8">
+        <h2 class="text-3xl font-medium m-auto text-center">Herramientas con las que trabajamos</h2>
+        <img src="/imgs/herramientas.jpg" alt="">
+        <img src="/imgs/herramientas.jpg" alt="">
+        <img src="/imgs/herramientas.jpg" alt="">
+      </div>
     </section>
     
-    <section class="flex flex-col bg-secondary py-20 px-12 gap-8">
-      <h2 class="text-3xl font-medium m-auto text-center">NUESTROS SERVICIOS</h2>
-      <ul>
-        <li>SERVICIO 1</li>
-        <li>SERVICIO 2</li>
-        <li>SERVICIO 3</li>
-      </ul>
+    <section class="bg-secondary ">
+      <div class="contenido md:w-[80%] lg:w-[60%] md:mx-auto flex flex-col py-20 px-12 gap-8">
+        <h2 class="text-3xl font-medium m-auto text-center">NUESTROS SERVICIOS</h2>
+        <ul>
+          <li>SERVICIO 1</li>
+          <li>SERVICIO 2</li>
+          <li>SERVICIO 3</li>
+        </ul>
+      </div>
     </section>
 
   </main>
 
-  <footer class="flex flex-col bg-primary py-20 px-12 gap-8">
-    <h2 class="text-3xl font-medium m-auto text-center">CONTÁCTANOS</h2>
-    <p>
-      [LUGAR DE LA EMPRESA] Trujillo, Perú <br>
-      Email: agroals@agroals.com <br>
-      Teléfono: 937 87 76 30 <br>
-      Whatsapp: 644 145 145 <br>
-    </p>
-    <p>COPYRIGHT</p>
+  <!-- PIE DE PÁGINA -->
+  <footer class="bg-primary">
+    <div class="contenido md:w-[80%] lg:w-[60%] md:mx-auto flex flex-col py-20 px-12 gap-8">
+      <h2 class="text-3xl font-medium m-auto text-center">CONTÁCTANOS</h2>
+      <p>
+        [LUGAR DE LA EMPRESA] Trujillo, Perú <br>
+        Email: agroals@agroals.com <br>
+        Teléfono: 937 87 76 30 <br>
+        Whatsapp: 644 145 145 <br>
+      </p>
+      <p>COPYRIGHT</p>
+    </div>
   </footer>
 
   <script src="https://kit.fontawesome.com/3cd8c90f36.js" crossorigin="anonymous"></script>

@@ -44,19 +44,20 @@
     </section>
     
     <section class="bg-primary">
-      <div class="contenido md:w-[80%] lg:w-[60%] flex flex-col justify-center px-10 text-center md:mx-auto gap-12 py-24">
+      <div class="contenido md:w-[80%] lg:w-[60%] flex flex-col justify-center px-10 text-center md:mx-auto py-24">
         <h2 class="text-3xl font-medium">¿Quiénes somos?</h2>
-        <div class="w-max m-auto">
-          <img class="object-cover object-right rounded-full w-80 h-80" src="/imgs/carpinteria.jpg" alt="">
+        <div class="mt-12">
+          <div class="w-max m-auto">
+              <img class="object-cover object-right rounded-full w-80 h-80" src="/imgs/carpinteria.jpg" alt="">
+            </div>
+            <p class="text-lg mt-12">Somos un negocio familiar de carpintería, donde creamos muebles únicos y ofrecemos servicios a medida para hogares. Con atención personalizada y artesanía, transformamos espacios y construimos historias duraderas.
+            </p>
+          </div>
         </div>
-        <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt architecto ab nulla enim autem,
-          fugit qui amet voluptatibus repellat laborum, odio consectetur rerum iste. Amet deserunt magni non facilis dolores.
-        </p>
-      </div>
     </section>
     
     <section class="bg-secondary">
-      <div class="contenido md:w-[80%] md:mx-auto flex flex-col py-12 px-12 gap-8">
+      <div class="contenido md:w-[80%] lg:w-[40%] md:mx-auto flex flex-col py-12 px-12 gap-8">
         <h2 class="text-3xl font-medium m-auto text-center">Realiza tu consulta</h2>
         <form class="flex flex-col gap-4" action="">
           <label class="font-bold" for="name">
@@ -129,6 +130,7 @@
       darkMode: 'class',
       content: ["./src/**/*.{html,js}"],
       theme: {
+        
         fontFamily: {
           'lato': 'Lato, sans-serif',
           'outfit': 'Outfit, sans-serif',

@@ -39,21 +39,23 @@
   <main>
     
     <section
-      class="before:content-[''] before:bg-[rgb(0,0,0,0.5)] before:absolute before:inset-0 relative bg-hero-pattern h-[80vh] w-full bg-cover bg-center bg-gradient-to-t flex justify-center items-center">
-      <h1 class="relative text-white font-bold text-8xl">HOLA</h1>
+      class="before:content-[''] before:bg-[rgb(0,0,0,0.5)] before:absolute before:inset-0 relative bg-hero-pattern h-[80vh] w-full bg-cover bg-center flex justify-center items-center">
+      <h shadow-xl1 class="relative text-white font-bold text-8xl">HOLA</h1>
     </section>
     
     <section class="bg-primary">
-      <div class="contenido md:w-[80%] lg:w-[60%] flex flex-col justify-center px-10 text-center md:mx-auto py-24">
+      <div class="contenido md:w-[80%] lg:w-[60%] flex flex-col justify-center md:px-0 px-10 text-center md:mx-auto py-24">
         <h2 class="text-3xl font-medium">¿Quiénes somos?</h2>
-        <div class="mt-12">
+        <div class="md:flex md:flex-row mt-12">
           <div class="w-max m-auto">
-              <img class="object-cover object-right rounded-full w-80 h-80" src="/imgs/carpinteria.jpg" alt="">
-            </div>
-            <p class="text-lg mt-12">Somos un negocio familiar de carpintería, donde creamos muebles únicos y ofrecemos servicios a medida para hogares. Con atención personalizada y artesanía, transformamos espacios y construimos historias duraderas.
-            </p>
+            <img class="object-cover object-right rounded-full md:w-60 md:h-60 w-80 h-80" src="/imgs/carpinteria.jpg" alt="">
           </div>
+          <p class="text-lg mt-12 md:mt-0 md:items-center md:flex md:w-[50%]">Somos un negocio familiar de carpintería, donde creamos muebles únicos y ofrecemos
+            servicios a medida para hogares. Con atención personalizada y artesanía, transformamos espacios y construimos
+            historias duraderas.
+          </p>
         </div>
+      </div>
     </section>
     
     <section class="bg-secondary">
@@ -83,11 +85,19 @@
     </section>
     
     <section class="bg-primary">
-      <div class="contenido md:w-[80%] lg:w-[60%] md:mx-auto flex flex-col py-20 px-12 gap-8">
-        <h2 class="text-3xl font-medium m-auto text-center">Herramientas con las que trabajamos</h2>
-        <img src="/imgs/herramientas.jpg" alt="">
-        <img src="/imgs/herramientas.jpg" alt="">
-        <img src="/imgs/herramientas.jpg" alt="">
+      <div class="flex flex-col py-20 gap-8 md:mx-auto md:px-0 px-8">
+        <h2 class="text-3xl font-medium text-center">Herramientas con las que trabajamos</h2>
+        <div class="flex flex-col gap-8 md:gap-2 md:flex-row md:justify-between md:mx-[10%]">
+          <div class="relative bg-drywall bg-cover aspect-[6/4] flex justify-center items-center md:w-[32%] shadow-xl before:content-[''] before:bg-[rgb(0,0,0,0.5)] before:absolute before:inset-0">
+            <span class="relative text-white text-4xl shadow-lg font-extrabold md:text-3xl">DRYWALL</span>
+          </div>
+          <div class="relative bg-wood bg-cover aspect-[6/4] flex justify-center items-center md:w-[32%] shadow-xl before:content-[''] before:bg-[rgb(0,0,0,0.5)] before:absolute before:inset-0">
+            <span class="relative text-white text-4xl shadow-lg font-extrabold md:text-3xl">MADERA</span>
+          </div>
+          <div class="relative bg-melamine bg-cover aspect-[6/4] flex justify-center items-center md:w-[32%] shadow-xl before:content-[''] before:bg-[rgb(0,0,0,0.5)] before:absolute before:inset-0">
+            <span class="relative text-white text-4xl shadow-lg font-extrabold md:text-3xl">MELAMINA</span>
+          </div>
+        </div>
       </div>
     </section>
     
@@ -143,6 +153,9 @@
           },
           backgroundImage: {
             'hero-pattern': "url(../imgs/carpinteria-2.jpg)",
+            'drywall': "url(https://img.freepik.com/foto-gratis/hombre-vista-frontal-trabajando-vistiendo-equipo-proteccion_23-2148784098.jpg?w=1380&t=st=1699645799~exp=1699646399~hmac=b9ea6f1abfc54f6bdc5958dde29ea3a78ac890b6d0ccbd942b94b08bdf716f76)",
+            'wood': "url(https://img.freepik.com/foto-gratis/vista-lateral-carpintero-femenino-estudio-sierra-electrica_23-2148813332.jpg?w=1480&t=st=1699645920~exp=1699646520~hmac=6431648b52bc7b6b6cf827799b7af15393084bd69e128f8c88fa7af6cd44a45a)",
+            'melamine': "url(https://img.freepik.com/foto-gratis/primer-plano-conjunto-cajones-madera_181624-25200.jpg?w=1380&t=st=1699646195~exp=1699646795~hmac=281cfd6dace5560f0d2b6c0bc04b71027b9980aa8e5a110e8e145d3671e27a73)",
           }
         }
       }

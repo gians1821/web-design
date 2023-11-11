@@ -7,28 +7,39 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Noto+Sans:wght@100;300;400;500;700&family=Outfit:wght@100;300;400;500;700&display=swap" rel="stylesheet">
   <title>Carpintería Samana</title>
+  <!-- <style>
+    body {
+      color: #b8b69c;
+    }
+  </style> -->
 </head>
-<body class="font-noto">
+<body class="font-noto text-default dark:text-dark-default transition-colors duration-500">
 
   <!-- ENCABEZADO -->
-  <header class="fixed bg-primary w-full z-10 shadow-lg">
+  <header class="fixed bg-gradient-to-t from-primary to-secondary w-full z-10 shadow-lg dark:from-dark-primary dark:to-dark-secondary">
   
     <div class="flex justify-between items-center h-20 md:w-[80%] md:m-auto">
   
       <img class="w-20 ml-4" src="/imgs/logo-magia-madera.png" alt="logo-magia-madera">
   
+      <ul id="menu"
+        class="transition-all duration-500 fixed text-center -right-full w-full h-max gap-2 top-20 bg-secondary md:flex md:relative md:top-auto md:h-auto md:w-auto md:bg-transparent md:transition-none md:right-0">
+        <li><a class="block p-11 rounded text-lg font-medium md:p-2 hover:bg-hover dark:hover:bg-dark-hover active:bg-active" href="#home">INICIO</a></li>
+        <li><a class="block p-11 rounded text-lg font-medium md:p-2 hover:bg-hover dark:hover:bg-dark-hover active:bg-active" href="#about">¿QUIÉNES SOMOS?</a></li>
+        <li><a class="block p-11 rounded text-lg font-medium md:p-2 hover:bg-hover dark:hover:bg-dark-hover active:bg-active" href="#form">REALIZA TU CONSULTA</a></li>
+        <li><a class="block p-11 rounded text-lg font-medium md:p-2 hover:bg-hover dark:hover:bg-dark-hover active:bg-active" href="#services">SERVICIOS</a></li>
+        <li><a class="block p-11 rounded text-lg font-medium md:p-2 hover:bg-hover dark:hover:bg-dark-hover active:bg-active" href="#contact">CONTÁCTANOS</a></li>
+      </ul>
+
+      <ul>
+        <div>
+          <button onclick="toggleDark()" class="w-12 h-12 flex items-center bg-transparent justify-center hover:bg-hover dark:hover:bg-dark-hover rounded"><i class="fa-solid fa-circle-half-stroke text-2xl"></i></button>
+        </div>
+      </ul>
+
       <div class="md:hidden">
         <i onclick="toggleMenu()" class="fa-solid fa-bars mr-6 cursor-pointer text-[2rem]"></i>
       </div>
-  
-      <ul id="menu"
-        class="transition-all duration-500 fixed text-center -right-full w-full h-max gap-2 top-20 bg-secondary md:flex md:relative md:top-auto md:h-auto md:w-auto md:bg-transparent md:transition-none md:right-0">
-        <li><a class="block p-11 md:p-2 rounded text-lg font-medium hover:bg-secondary active:bg-active" href="#home">INICIO</a></li>
-        <li><a class="block p-11 md:p-2 rounded text-lg font-medium hover:bg-secondary active:bg-active" href="#about">¿QUIÉNES SOMOS?</a></li>
-        <li><a class="block p-11 md:p-2 rounded text-lg font-medium hover:bg-secondary active:bg-active" href="#form">REALIZA TU CONSULTA</a></li>
-        <li><a class="block p-11 md:p-2 rounded text-lg font-medium hover:bg-secondary active:bg-active" href="#services">SERVICIOS</a></li>
-        <li><a class="block p-11 md:p-2 rounded text-lg font-medium hover:bg-secondary active:bg-active" href="#contact">CONTÁCTANOS</a></li>
-      </ul>
   
     </div>
   
@@ -40,10 +51,10 @@
     
     <section id="home"
       class="before:content-[''] before:bg-[rgb(0,0,0,0.5)] before:absolute before:inset-0 relative bg-hero-pattern h-[80vh] w-full bg-cover bg-center flex justify-center items-center">
-      <h1 class="relative text-slate-900 shadow-lg shadow-black font-bold text-4xl w-min md:text-8xl bg-primary py-4 md:py-8 px-4 md:px-10 rounded-lg">CARPINTERÍA MAGIA MADERA</h1>
+      <h1 class="relative shadow-lg shadow-black font-bold text-4xl w-min md:text-8xl bg-primary dark:bg-dark-primary py-4 md:py-8 px-4 md:px-10 rounded-lg">CARPINTERÍA MAGIA MADERA</h1>
     </section>
     
-    <section id="about" class="bg-primary px-10 py-24">
+    <section id="about" class="bg-primary dark:bg-dark-primary px-10 py-24">
       <div class="flex flex-col justify-center text-center md:mx-auto md:w-[80%] lg:w-[60%] ">
         <h2 class="text-3xl font-bold">¿QUIÉNES SOMOS?</h2>
         <div class="mt-12 md:flex md:flex-row">
@@ -58,12 +69,12 @@
       </div>
     </section>
 
-    <section id="services" class="bg-secondary py-12 px-8 md:px-0">
+    <section id="services" class="bg-secondary dark:bg-dark-secondary py-12 px-8 md:px-0">
       <div class="contenido md:w-[80%] lg:w-[60%] md:mx-auto flex flex-col">
         <h2 class="text-3xl font-bold text-center">NUESTROS SERVICIOS</h2>
         <ul>
           <li>
-            <article class="object-cover px-4 py-8 md:p-4 bg-primary md:mx-auto rounded shadow-lg my-10 ">
+            <article class="object-cover px-4 py-8 md:px-6 md:py-4 bg-primary dark:bg-dark-primary md:mx-auto rounded shadow-lg my-10 ">
               <h2 class="mb-8 font-extrabold text-2xl text-center"><i class="fa-solid fa-tape"></i> Confección</h2>
               <div class="flex flex-col md:flex-row">
                 <img class="md:mr-4 mb-4 rounded-sm object-cover aspect-video md:w-[30%]"
@@ -77,7 +88,7 @@
             </article>
           </li>
           <li>
-            <article class="object-cover px-4 py-8 md:p-4 bg-primary md:mx-auto rounded shadow-lg my-10 ">
+            <article class="object-cover px-4 py-8 md:px-6 md:py-4 bg-primary dark:bg-dark-primary md:mx-auto rounded shadow-lg my-10 ">
               <h2 class="mb-8 font-extrabold text-2xl text-center"><i class="fa-solid fa-list-check"></i> Mantenimiento</h2>
               <div class="flex flex-col md:flex-row">
                 <img class="md:mr-4 mb-4 rounded-sm object-cover aspect-video md:w-[30%]"
@@ -88,7 +99,7 @@
             </article>
           </li>
           <li>
-            <article class="object-cover px-4 py-8 md:p-4 bg-primary md:mx-auto rounded shadow-lg my-10 mb-0">
+            <article class="object-cover px-4 py-8 md:px-6 md:py-4 bg-primary dark:bg-dark-primary md:mx-auto rounded shadow-lg my-10 mb-0">
               <h2 class="mb-8 font-extrabold text-2xl text-center"><i class="fa-solid fa-gears"></i> Reestructuración</h2>
               <div class="flex flex-col md:flex-row">
                 <img class="md:mr-4 mb-4 rounded-sm object-cover aspect-video md:w-[30%]"
@@ -102,24 +113,24 @@
       </div>
     </section>
 
-    <section id="tools" class="bg-primary">
+    <section id="tools" class="bg-primary dark:bg-dark-primary">
       <div class="flex flex-col py-12 md:mx-auto md:px-0 px-8">
         <h2 class="text-3xl font-bold text-center mb-8">NUESTRAS HERRAMIENTAS</h2>
         <div class="flex flex-col gap-8 md:mb-4 md:gap-2 md:flex-row md:justify-between md:mx-[10%]">
-          <div class="relative bg-drywall bg-cover aspect-[6/4] rounded before:rounded flex justify-center items-center shadow-lg shadow-slate-600 md:w-[32%] before:content-[''] before:bg-[rgb(0,0,0,0.5)] before:absolute before:inset-0">
+          <div class="relative bg-drywall bg-cover aspect-[6/4] rounded before:rounded flex justify-center items-center shadow-lg md:w-[32%] before:content-[''] before:bg-[rgb(0,0,0,0.5)] before:absolute before:inset-0">
             <span class="relative text-white text-4xl shadow-lg font-extrabold md:text-3xl">DRYWALL</span>
           </div>
-          <div class="relative bg-wood bg-cover aspect-[6/4] rounded before:rounded flex justify-center items-center shadow-lg shadow-slate-600 md:w-[32%] before:content-[''] before:bg-[rgb(0,0,0,0.5)] before:absolute before:inset-0">
+          <div class="relative bg-wood bg-cover aspect-[6/4] rounded before:rounded flex justify-center items-center shadow-lg md:w-[32%] before:content-[''] before:bg-[rgb(0,0,0,0.5)] before:absolute before:inset-0">
             <span class="relative text-white text-4xl shadow-lg font-extrabold md:text-3xl">MADERA</span>
           </div>
-          <div class="relative bg-melamine bg-cover aspect-[6/4] rounded before:rounded flex justify-center items-center shadow-lg shadow-slate-600 md:w-[32%] before:content-[''] before:bg-[rgb(0,0,0,0.5)] before:absolute before:inset-0">
+          <div class="relative bg-melamine bg-cover aspect-[6/4] rounded before:rounded flex justify-center items-center shadow-lg md:w-[32%] before:content-[''] before:bg-[rgb(0,0,0,0.5)] before:absolute before:inset-0">
             <span class="relative text-white text-4xl shadow-lg font-extrabold md:text-3xl">MELAMINA</span>
           </div>
         </div>
       </div>
     </section>
     
-    <section id="form" class="bg-secondary py-12 px-8">
+    <section id="form" class="bg-secondary dark:bg-dark-secondary py-12 px-8">
       <div class="contenido md:w-[80%] lg:w-[40%] md:mx-auto flex flex-col gap-8">
         <h2 class="text-3xl font-bold text-center">REALIZA TU <br class="md:hidden"> CONSULTA</h2>
         <form class="flex flex-col gap-4" action="">
@@ -147,11 +158,12 @@
     
   </main>
 
-  <hola-mundo>
-  </hola-mundo>
+  <div class="fixed right-8 bottom-8">
+    <a class="text-5xl flex rounded-full justify-center items-center w-16 h-16 bg-gradient-to-br from-[#25D366] to-[#6eaf5a] shadow-2xl" href="https://wa.me/51949476059?text=Hola! Deseo información sobre su negocio" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+  </div>
 
   <!-- PIE DE PÁGINA -->
-  <footer id="contact" class="bg-primary py-20 px-8">
+  <footer id="contact" class="bg-primary dark:bg-dark-primary py-20 px-8">
     <div class="contenido md:w-[80%] lg:w-[60%] md:mx-auto flex flex-col gap-8">
       <h2 class="text-3xl font-bold text-center">CONTÁCTANOS</h2>
       <p>
@@ -180,9 +192,15 @@
         },
         extend: {
           colors: {
-            'primary': '#C4BD82',
-            'secondary': '#D4CFA5',
-            'active': '#C4BD82',
+            'default': 'black',
+            'primary': '#e3d9b1',
+            'secondary': '#f1ecca',
+            'hover': '#d5c599',
+            'active': '#f1ecca',
+            'dark-default': 'white',
+            'dark-primary': '#382107',
+            'dark-secondary': '#493016',
+            'dark-hover': '#5c3e1a',
           },
           backgroundImage: {
             'hero-pattern': "url(../imgs/carpinteria-2.jpg)",

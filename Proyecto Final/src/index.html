@@ -23,11 +23,11 @@
   
       <ul id="menu"
         class="md:flex md:relative md:top-auto md:mr-4 md:h-auto md:w-auto md:bg-transparent md:transition-none md:right-0 transition-all duration-500 fixed text-center -right-full w-full h-max gap-2 top-20 bg-secondary">
-        <li><a class="block p-11 md:p-1 text-xl hover:bg-primary" href="#">INICIO</a></li>
-        <li><a class="block p-11 md:p-1 text-xl hover:bg-primary" href="#">¿QUIÉNES SOMOS?</a></li>
-        <li><a class="block p-11 md:p-1 text-xl hover:bg-primary" href="#">REALIZA TU CONSULTA</a></li>
-        <li><a class="block p-11 md:p-1 text-xl hover:bg-primary" href="#">PRODUCTOS</a></li>
-        <li><a class="block p-11 md:p-1 text-xl hover:bg-primary" href="#">SERVICIOS</a></li>
+        <li><a class="block p-11 md:p-1 text-xl hover:bg-secondary active:bg-active" href="#home">INICIO</a></li>
+        <li><a class="block p-11 md:p-1 text-xl hover:bg-secondary active:bg-active" href="#about">¿QUIÉNES SOMOS?</a></li>
+        <li><a class="block p-11 md:p-1 text-xl hover:bg-secondary active:bg-active" href="#form">REALIZA TU CONSULTA</a></li>
+        <li><a class="block p-11 md:p-1 text-xl hover:bg-secondary active:bg-active" href="#services">SERVICIOS</a></li>
+        <li><a class="block p-11 md:p-1 text-xl hover:bg-secondary active:bg-active" href="#contact">CONTÁCTANOS</a></li>
       </ul>
   
     </div>
@@ -38,14 +38,14 @@
   <!-- APARTADO PRINCIPAL -->
   <main>
     
-    <section
+    <section id="home"
       class="before:content-[''] before:bg-[rgb(0,0,0,0.5)] before:absolute before:inset-0 relative bg-hero-pattern h-[80vh] w-full bg-cover bg-center flex justify-center items-center">
       <h1 class="relative text-slate-900 shadow-lg shadow-black font-bold text-4xl w-min md:text-8xl bg-primary py-4 md:py-8 px-4 md:px-10 rounded-lg">CARPINTERÍA MAGIA MADERA</h1>
     </section>
     
-    <section class="bg-primary px-10 py-24">
+    <section id="about" class="bg-primary px-10 py-24">
       <div class="flex flex-col justify-center text-center md:mx-auto md:w-[80%] lg:w-[60%] ">
-        <h2 class="text-3xl font-medium">¿QUIÉNES SOMOS?</h2>
+        <h2 class="text-3xl font-bold">¿QUIÉNES SOMOS?</h2>
         <div class="mt-12 md:flex md:flex-row">
           <div class="m-auto">
             <img class="object-cover aspect-square object-right rounded-full w-80 md:w-60" src="/imgs/carpinteria.jpg" alt="">
@@ -57,38 +57,71 @@
         </div>
       </div>
     </section>
-    
-    <section class="bg-secondary py-20 px-8">
-      <div class="contenido md:w-[80%] lg:w-[60%] md:mx-auto flex flex-col gap-8">
-        <h2 class="text-3xl font-medium m-auto text-center">NUESTROS SERVICIOS</h2>
+
+    <section id="services" class="bg-secondary py-12 px-8 md:px-0">
+      <div class="contenido md:w-[80%] lg:w-[60%] md:mx-auto flex flex-col">
+        <h2 class="text-3xl font-bold text-center">NUESTROS SERVICIOS</h2>
         <ul>
-          <li class="mx-auto w-max text-xl mt-8"><i class="fa-solid fa-tape"></i> Confección</li>
-          <li class="mx-auto w-max text-xl mt-8"><i class="fa-solid fa-list-check"></i> Mantenimiento</li>
-          <li class="mx-auto w-max text-xl mt-8"><i class="fa-solid fa-gears"></i> Reestructuración</li>
+          <li>
+            <article class="object-cover px-4 py-8 md:p-4 bg-primary md:mx-auto rounded shadow-lg my-10 ">
+              <h2 class="mb-8 font-extrabold text-2xl text-center"><i class="fa-solid fa-tape"></i> Confección</h2>
+              <div class="flex flex-col md:flex-row">
+                <img class="md:mr-4 mb-4 rounded-sm object-cover aspect-video md:w-[30%]"
+                  src="https://img.freepik.com/foto-gratis/carpintero-profesional-trabajando-sierra_1157-35629.jpg?w=1380&t=st=1699721137~exp=1699721737~hmac=cc4ae41551279c5adcaa3c168b06b25769e36acc6767174b88cd539360f1b8ff"
+                  alt="">
+                <p class="text-center md:text-left text-lg">En nuestra carpintería, la creación de muebles es todo un arte que
+                  fusiona destreza técnica con pasión. Cada pieza que elaboramos lleva consigo la historia de cuidadosa selección
+                  de materiales y el meticuloso proceso de diseño y construcción. Cada proyecto es una expresión de dedicación y
+                  amor por el oficio.</p>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="object-cover px-4 py-8 md:p-4 bg-primary md:mx-auto rounded shadow-lg my-10 ">
+              <h2 class="mb-8 font-extrabold text-2xl text-center"><i class="fa-solid fa-list-check"></i> Mantenimiento</h2>
+              <div class="flex flex-col md:flex-row">
+                <img class="md:mr-4 mb-4 rounded-sm object-cover aspect-video md:w-[30%]"
+                  src="https://img.freepik.com/foto-gratis/punto-vista-joven-manitas-que-usa-taladro-electrico-arreglar-puerta-armario-cocina_662251-2704.jpg?w=1380&t=st=1699724457~exp=1699725057~hmac=63bfffefcc76ae8a092623cdffb29111819bc3ca44e4c8f3b4c4c7f069bfd9b0"
+                  alt="">
+                <p class="text-center md:text-left text-lg">Mantener la belleza y funcionalidad de tus muebles es un compromiso que asumimos con seriedad. Nuestra filosofía en cuanto al mantenimiento es simple pero efectiva: cuidar cada pieza como si fuera única. Nuestro objetivo es que tus muebles no solo perduren en el tiempo, sino que también sigan siendo un testimonio de calidad y buen gusto.</p>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="object-cover px-4 py-8 md:p-4 bg-primary md:mx-auto rounded shadow-lg my-10 ">
+              <h2 class="mb-8 font-extrabold text-2xl text-center"><i class="fa-solid fa-gears"></i> Reestructuración</h2>
+              <div class="flex flex-col md:flex-row">
+                <img class="md:mr-4 mb-4 rounded-sm object-cover aspect-video md:w-[30%]"
+                  src="https://img.freepik.com/foto-gratis/trabajador-carpintero-calificado-utilizando-sus-herramientas-madera_23-2148640318.jpg?w=1380&t=st=1699724526~exp=1699725126~hmac=9b1420dca321ec5b2b5756233986ae16641997d86006f4c6eb418ec265316b9c"
+                  alt="">
+                <p class="text-center md:text-left text-lg">Cuando se trata de reestructurar o reparar muebles, nos sumergimos en el desafío con una mezcla de habilidad artesanal y compromiso. Ya sea restaurando ese antiguo sillón heredado con un valor sentimental inigualable o renovando muebles desgastados por el uso diario, nuestro equipo de expertos carpinteros se dedica a devolverles vida y funcionalidad.</p>
+              </div>
+            </article>
+          </li>
         </ul>
       </div>
     </section>
 
-    <section class="bg-primary">
-      <div class="flex flex-col py-20 gap-8 md:mx-auto md:px-0 px-8">
-        <h2 class="text-3xl font-medium text-center">NUESTRAS HERRAMIENTAS</h2>
-        <div class="flex flex-col gap-8 md:gap-2 md:flex-row md:justify-between md:mx-[10%]">
-          <div class="relative bg-drywall bg-cover aspect-[6/4] flex justify-center items-center shadow-lg shadow-slate-600 md:w-[32%] before:content-[''] before:bg-[rgb(0,0,0,0.5)] before:absolute before:inset-0">
+    <section id="tools" class="bg-primary">
+      <div class="flex flex-col py-12 md:mx-auto md:px-0 px-8">
+        <h2 class="text-3xl font-bold text-center mb-8">NUESTRAS HERRAMIENTAS</h2>
+        <div class="flex flex-col gap-8 md:mb-4 md:gap-2 md:flex-row md:justify-between md:mx-[10%]">
+          <div class="relative bg-drywall bg-cover aspect-[6/4] rounded before:rounded flex justify-center items-center shadow-lg shadow-slate-600 md:w-[32%] before:content-[''] before:bg-[rgb(0,0,0,0.5)] before:absolute before:inset-0">
             <span class="relative text-white text-4xl shadow-lg font-extrabold md:text-3xl">DRYWALL</span>
           </div>
-          <div class="relative bg-wood bg-cover aspect-[6/4] flex justify-center items-center shadow-lg shadow-slate-600 md:w-[32%] before:content-[''] before:bg-[rgb(0,0,0,0.5)] before:absolute before:inset-0">
+          <div class="relative bg-wood bg-cover aspect-[6/4] rounded before:rounded flex justify-center items-center shadow-lg shadow-slate-600 md:w-[32%] before:content-[''] before:bg-[rgb(0,0,0,0.5)] before:absolute before:inset-0">
             <span class="relative text-white text-4xl shadow-lg font-extrabold md:text-3xl">MADERA</span>
           </div>
-          <div class="relative bg-melamine bg-cover aspect-[6/4] flex justify-center items-center shadow-lg shadow-slate-600 md:w-[32%] before:content-[''] before:bg-[rgb(0,0,0,0.5)] before:absolute before:inset-0">
+          <div class="relative bg-melamine bg-cover aspect-[6/4] rounded before:rounded flex justify-center items-center shadow-lg shadow-slate-600 md:w-[32%] before:content-[''] before:bg-[rgb(0,0,0,0.5)] before:absolute before:inset-0">
             <span class="relative text-white text-4xl shadow-lg font-extrabold md:text-3xl">MELAMINA</span>
           </div>
         </div>
       </div>
     </section>
     
-    <section class="bg-secondary py-12 px-8">
+    <section id="form" class="bg-secondary py-12 px-8">
       <div class="contenido md:w-[80%] lg:w-[40%] md:mx-auto flex flex-col gap-8">
-        <h2 class="text-3xl font-medium m-auto text-center">REALIZA TU CONSULTA</h2>
+        <h2 class="text-3xl font-bold text-center">REALIZA TU <br class="md:hidden"> CONSULTA</h2>
         <form class="flex flex-col gap-4" action="">
           <label class="font-bold" for="name">
             Nombre:
@@ -118,9 +151,9 @@
   </hola-mundo>
 
   <!-- PIE DE PÁGINA -->
-  <footer class="bg-primary py-20 px-8">
+  <footer id="contact" class="bg-primary py-20 px-8">
     <div class="contenido md:w-[80%] lg:w-[60%] md:mx-auto flex flex-col gap-8">
-      <h2 class="text-3xl font-medium m-auto text-center">CONTÁCTANOS</h2>
+      <h2 class="text-3xl font-bold text-center">CONTÁCTANOS</h2>
       <p>
         <strong>Calle El Cedro 873 Trujillo, Perú</strong> <br>
         <strong>Email:</strong> magia@madera.com <br>
@@ -147,8 +180,9 @@
         },
         extend: {
           colors: {
-            'primary': '#a29d7f',
-            'secondary': '#d4cfa5',
+            'primary': '#C4BD82',
+            'secondary': '#D4CFA5',
+            'active': '#C4BD82',
           },
           backgroundImage: {
             'hero-pattern': "url(../imgs/carpinteria-2.jpg)",

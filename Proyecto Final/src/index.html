@@ -20,10 +20,11 @@
   
     <div class="flex justify-between items-center h-20 md:w-[80%] md:m-auto">
   
-      <img class="w-20 ml-4" src="/imgs/logo-magia-madera.png" alt="logo-magia-madera">
+      <img class="w-20 ml-4 text-white dark:hidden" src="/imgs/logo.webp" alt="logo-magia-madera">
+      <img class="w-20 ml-4 text-white hidden dark:block" src="/imgs/dark-logo.webp" alt="logo-magia-madera">
   
       <ul id="menu"
-        class="transition-all duration-500 fixed text-center -right-full w-full h-max gap-2 top-20 bg-secondary md:flex md:relative md:top-auto md:h-auto md:w-auto md:bg-transparent md:transition-none md:right-0">
+        class="transition-all duration-500 fixed text-center -right-full w-full h-max gap-2 top-20 bg-secondary dark:bg-dark-secondary md:flex md:relative md:top-auto md:h-auto md:w-auto md:bg-transparent md:transition-none md:right-0">
         <li><a class="block p-11 rounded text-lg font-medium md:p-2 hover:bg-hover dark:hover:bg-dark-hover active:bg-active" href="#home">INICIO</a></li>
         <li><a class="block p-11 rounded text-lg font-medium md:p-2 hover:bg-hover dark:hover:bg-dark-hover active:bg-active" href="#about">¿QUIÉNES SOMOS?</a></li>
         <li><a class="block p-11 rounded text-lg font-medium md:p-2 hover:bg-hover dark:hover:bg-dark-hover active:bg-active" href="#form">REALIZA TU CONSULTA</a></li>
@@ -54,16 +55,14 @@
       <h1 class="relative shadow-lg shadow-black font-bold text-4xl w-min md:text-8xl bg-primary dark:bg-dark-primary py-4 md:py-8 px-4 md:px-10 rounded-lg">CARPINTERÍA MAGIA MADERA</h1>
     </section>
     
-    <section id="about" class="bg-primary dark:bg-dark-primary px-10 py-24">
+    <section id="about" class="bg-primary dark:bg-dark-primary px-10 py-12">
       <div class="flex flex-col justify-center text-center md:mx-auto md:w-[80%] lg:w-[60%] ">
         <h2 class="text-3xl font-bold">¿QUIÉNES SOMOS?</h2>
         <div class="mt-12 md:flex md:flex-row">
           <div class="m-auto">
             <img class="object-cover shadow-lg aspect-square object-right rounded-full w-80 md:w-60" src="/imgs/carpinteria.jpg" alt="">
           </div>
-          <p class="text-lg mt-12 md:mt-0 md:items-center md:text-left md:flex md:w-[50%]">Somos un negocio familiar de carpintería, donde creamos muebles únicos y ofrecemos
-            servicios a medida para hogares. Con atención personalizada y artesanía, transformamos espacios y construimos
-            historias duraderas.
+          <p class="text-lg mt-12 md:mt-0 md:items-center md:text-left md:flex md:w-[50%]">Somos un negocio familiar de carpintería, donde creamos muebles únicos y ofrecemos servicios a medida para hogares. Con atención personalizada y artesanía, transformamos espacios y construimos historias duraderas.
           </p>
         </div>
       </div>
@@ -80,10 +79,7 @@
                 <img class="md:mr-4 mb-4 rounded-sm object-cover aspect-video md:w-[30%]"
                   src="https://img.freepik.com/foto-gratis/carpintero-profesional-trabajando-sierra_1157-35629.jpg?w=1380&t=st=1699721137~exp=1699721737~hmac=cc4ae41551279c5adcaa3c168b06b25769e36acc6767174b88cd539360f1b8ff"
                   alt="">
-                <p class="text-center md:text-left text-lg">En nuestra carpintería, la creación de muebles es todo un arte que
-                  fusiona destreza técnica con pasión. Cada pieza que elaboramos lleva consigo la historia de cuidadosa selección
-                  de materiales y el meticuloso proceso de diseño y construcción. Cada proyecto es una expresión de dedicación y
-                  amor por el oficio.</p>
+                <p class="text-center md:text-left text-lg"> Cada pieza que elaboramos lleva consigo la historia de cuidadosa selección de materiales y el meticuloso proceso de diseño y construcción. Cada proyecto es una expresión de dedicación y amor por el oficio.</p>
               </div>
             </article>
           </li>
@@ -94,7 +90,7 @@
                 <img class="md:mr-4 mb-4 rounded-sm object-cover aspect-video md:w-[30%]"
                   src="https://img.freepik.com/foto-gratis/punto-vista-joven-manitas-que-usa-taladro-electrico-arreglar-puerta-armario-cocina_662251-2704.jpg?w=1380&t=st=1699724457~exp=1699725057~hmac=63bfffefcc76ae8a092623cdffb29111819bc3ca44e4c8f3b4c4c7f069bfd9b0"
                   alt="">
-                <p class="text-center md:text-left text-lg">Mantener la belleza y funcionalidad de tus muebles es un compromiso que asumimos con seriedad. Nuestra filosofía en cuanto al mantenimiento es simple pero efectiva: cuidar cada pieza como si fuera única. Nuestro objetivo es que tus muebles no solo perduren en el tiempo, sino que también sigan siendo un testimonio de calidad y buen gusto.</p>
+                <p class="text-center md:text-left text-lg">Nuestra filosofía en cuanto al mantenimiento es simple pero efectiva: cuidar cada pieza como si fuera única. Nuestro objetivo es que tus muebles no solo perduren en el tiempo, sino que también sigan siendo un testimonio de calidad y buen gusto.</p>
               </div>
             </article>
           </li>
@@ -105,7 +101,7 @@
                 <img class="md:mr-4 mb-4 rounded-sm object-cover aspect-video md:w-[30%]"
                   src="https://img.freepik.com/foto-gratis/trabajador-carpintero-calificado-utilizando-sus-herramientas-madera_23-2148640318.jpg?w=1380&t=st=1699724526~exp=1699725126~hmac=9b1420dca321ec5b2b5756233986ae16641997d86006f4c6eb418ec265316b9c"
                   alt="">
-                <p class="text-center md:text-left text-lg">Cuando se trata de reestructurar o reparar muebles, nos sumergimos en el desafío con una mezcla de habilidad artesanal y compromiso. Ya sea restaurando ese antiguo sillón heredado con un valor sentimental inigualable o renovando muebles desgastados por el uso diario, nuestro equipo de expertos carpinteros se dedica a devolverles vida y funcionalidad.</p>
+                <p class="text-center md:text-left text-lg">Ya sea restaurando ese antiguo sillón heredado con un valor sentimental inigualable o renovando muebles desgastados por el uso diario, nuestro equipo de expertos carpinteros se dedica a devolverles vida y funcionalidad.</p>
               </div>
             </article>
           </li>
@@ -258,9 +254,9 @@
             'hover': '#d5c599',
             'active': '#f1ecca',
             'dark-default': 'white',
-            'dark-primary': '#382107',
-            'dark-secondary': '#493016',
-            'dark-hover': '#5c3e1a',
+            'dark-primary': '#2E4053',
+            'dark-secondary': '#26394e',
+            'dark-hover': '#416183',
           },
           backgroundImage: {
             'hero-pattern': "url(../imgs/carpinteria-2.jpg)",

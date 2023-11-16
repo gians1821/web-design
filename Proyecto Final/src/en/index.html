@@ -6,7 +6,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Noto+Sans:wght@100;300;400;500;700&family=Outfit:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-  <title>Carpintería Samana</title>
+  <title>Samana Carpentry</title>
 </head>
 <body class="font-noto text-default dark:text-dark-default transition-colors duration-500">
 
@@ -19,23 +19,23 @@
       <img class="w-20 ml-4 text-white hidden dark:block" src="/imgs/dark-logo.webp" alt="logo-magia-madera">
   
       <ul id="menu"
-        class="transition-all duration-500 fixed text-center -right-full w-full h-max gap-2 top-20 bg-secondary dark:bg-dark-secondary md:flex md:relative md:top-auto md:h-auto md:w-auto md:bg-transparent md:transition-none md:right-0">
-        <li><a class="block p-11 rounded text-lg font-medium md:p-2 hover:bg-hover dark:hover:bg-dark-hover active:bg-active" href="#home">INICIO</a></li>
-        <li><a class="block p-11 rounded text-lg font-medium md:p-2 hover:bg-hover dark:hover:bg-dark-hover active:bg-active" href="#about">¿QUIÉNES SOMOS?</a></li>
-        <li><a class="block p-11 rounded text-lg font-medium md:p-2 hover:bg-hover dark:hover:bg-dark-hover active:bg-active" href="#form">REALIZA TU CONSULTA</a></li>
-        <li><a class="block p-11 rounded text-lg font-medium md:p-2 hover:bg-hover dark:hover:bg-dark-hover active:bg-active" href="#services">SERVICIOS</a></li>
-        <li><a class="block p-11 rounded text-lg font-medium md:p-2 hover:bg-hover dark:hover:bg-dark-hover active:bg-active" href="#contact">CONTÁCTANOS</a></li>
+        class="transition-all duration-500 fixed text-center -right-full w-full h-max gap-2 top-20 bg-secondary md:flex md:relative dark:bg-dark-secondary md:top-auto md:h-auto md:w-auto md:bg-transparent md:transition-none md:right-0">
+        <li><a class="block p-11 rounded text-lg font-medium md:p-2 hover:bg-hover dark:hover:bg-dark-hover active:bg-active" href="#home">HOME</a></li>
+        <li><a class="block p-11 rounded text-lg font-medium md:p-2 hover:bg-hover dark:hover:bg-dark-hover active:bg-active" href="#about">ABOUT US</a></li>
+        <li><a class="block p-11 rounded text-lg font-medium md:p-2 hover:bg-hover dark:hover:bg-dark-hover active:bg-active" href="#form">REQUEST FORM</a></li>
+        <li><a class="block p-11 rounded text-lg font-medium md:p-2 hover:bg-hover dark:hover:bg-dark-hover active:bg-active" href="#services">SERVICES</a></li>
+        <li><a class="block p-11 rounded text-lg font-medium md:p-2 hover:bg-hover dark:hover:bg-dark-hover active:bg-active" href="#contact">CONTACT US</a></li>
       </ul>
 
       <ul class="flex gap-2">
         <div>
-          <button onclick="toUSA()" class="w-16 h-12 flex items-center bg-transparent justify-center hover:bg-hover dark:hover:bg-dark-hover rounded">
-            <img class="object-contain w-10" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/1200px-Flag_of_Peru.svg.png" alt="peru-flag">
+          <button onclick="toPEN()" class="w-16 h-12 flex items-center bg-transparent justify-center hover:bg-hover dark:hover:bg-dark-hover rounded">
+            <img class="object-contain w-10" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/800px-Flag_of_the_United_States.svg.png?20151118161041" alt="peru-flag">
           </button>
         </div>
         <div>
           <button onclick="toggleDark()" class="w-12 h-12 flex items-center bg-transparent justify-center hover:bg-hover dark:hover:bg-dark-hover rounded"><i class="fa-solid fa-circle-half-stroke text-2xl"></i></button>
-        </div>
+        </div>        
       </ul>
 
       <div class="md:hidden">
@@ -57,12 +57,12 @@
     
     <section id="about" class="bg-primary dark:bg-dark-primary px-10 py-12">
       <div class="flex flex-col justify-center text-center md:mx-auto md:w-[80%] lg:w-[60%] ">
-        <h2 class="text-3xl font-bold">¿QUIÉNES SOMOS?</h2>
+        <h2 class="text-3xl font-bold">ABOUT US</h2>
         <div class="mt-12 md:flex md:flex-row">
           <div class="m-auto">
             <img class="object-cover shadow-lg aspect-square object-right rounded-full w-80 md:w-60" src="/imgs/carpinteria.jpg" alt="">
           </div>
-          <p class="text-lg mt-12 md:mt-0 md:items-center md:text-left md:flex md:w-[50%]">Somos un negocio familiar de carpintería, donde creamos muebles únicos y ofrecemos servicios a medida para hogares. Con atención personalizada y artesanía, transformamos espacios y construimos historias duraderas.
+          <p class="text-lg mt-12 md:mt-0 md:items-center md:text-left md:w-[50%]">We are a family-owned carpentry business, where we create unique furniture and offer custom services for homes. With personalized attention and craftsmanship, we transform spaces and build lasting stories.
           </p>
         </div>
       </div>
@@ -70,7 +70,7 @@
 
     <section id="services" class="bg-secondary dark:bg-dark-secondary py-12 px-8 md:px-0">
       <div class="contenido md:w-[80%] lg:w-[60%] md:mx-auto flex flex-col">
-        <h2 class="text-3xl font-bold text-center">NUESTROS SERVICIOS</h2>
+        <h2 class="text-3xl font-bold text-center">OUR SERVICES</h2>
         <ul>
           <li>
             <article class="object-cover px-4 py-8 md:px-6 md:py-4 bg-primary dark:bg-dark-primary md:mx-auto rounded shadow-lg my-10 ">
@@ -79,29 +79,29 @@
                 <img class="md:mr-4 mb-4 rounded-sm object-cover aspect-video md:w-[30%]"
                   src="https://img.freepik.com/foto-gratis/carpintero-profesional-trabajando-sierra_1157-35629.jpg?w=1380&t=st=1699721137~exp=1699721737~hmac=cc4ae41551279c5adcaa3c168b06b25769e36acc6767174b88cd539360f1b8ff"
                   alt="">
-                <p class="text-center md:text-left text-lg"> Cada pieza que elaboramos lleva consigo la historia de cuidadosa selección de materiales y el meticuloso proceso de diseño y construcción. Cada proyecto es una expresión de dedicación y amor por el oficio.</p>
+                <p class="text-center md:text-left text-lg">Each piece we craft carries the story of careful material selection and the meticulous process of design and construction. Each project is an expression of dedication and love for the craft.</p>
               </div>
             </article>
           </li>
           <li>
             <article class="object-cover px-4 py-8 md:px-6 md:py-4 bg-primary dark:bg-dark-primary md:mx-auto rounded shadow-lg my-10 ">
-              <h2 class="mb-4 font-extrabold text-2xl text-center"><i class="fa-solid fa-list-check"></i> Mantenimiento</h2>
+              <h2 class="mb-4 font-extrabold text-2xl text-center"><i class="fa-solid fa-list-check"></i> Maintenance</h2>
               <div class="flex flex-col md:flex-row">
                 <img class="md:mr-4 mb-4 rounded-sm object-cover aspect-video md:w-[30%]"
                   src="https://img.freepik.com/foto-gratis/punto-vista-joven-manitas-que-usa-taladro-electrico-arreglar-puerta-armario-cocina_662251-2704.jpg?w=1380&t=st=1699724457~exp=1699725057~hmac=63bfffefcc76ae8a092623cdffb29111819bc3ca44e4c8f3b4c4c7f069bfd9b0"
                   alt="">
-                <p class="text-center md:text-left text-lg">Nuestra filosofía en cuanto al mantenimiento es simple pero efectiva: cuidar cada pieza como si fuera única. Nuestro objetivo es que tus muebles no solo perduren en el tiempo, sino que también sigan siendo un testimonio de calidad y buen gusto.</p>
+                <p class="text-center md:text-left text-lg">Our philosophy regarding maintenance is simple but effective: care for each piece as if it were unique. Our goal is for your furniture not only to endure over time but also to remain a testament to quality and good taste.</p>
               </div>
             </article>
           </li>
           <li>
             <article class="object-cover px-4 py-8 md:px-6 md:py-4 bg-primary dark:bg-dark-primary md:mx-auto rounded shadow-lg my-10 mb-0">
-              <h2 class="mb-4 font-extrabold text-2xl text-center"><i class="fa-solid fa-gears"></i> Reestructuración</h2>
+              <h2 class="mb-4 font-extrabold text-2xl text-center"><i class="fa-solid fa-gears"></i> Restructuring</h2>
               <div class="flex flex-col md:flex-row">
                 <img class="md:mr-4 mb-4 rounded-sm object-cover aspect-video md:w-[30%]"
                   src="https://img.freepik.com/foto-gratis/trabajador-carpintero-calificado-utilizando-sus-herramientas-madera_23-2148640318.jpg?w=1380&t=st=1699724526~exp=1699725126~hmac=9b1420dca321ec5b2b5756233986ae16641997d86006f4c6eb418ec265316b9c"
                   alt="">
-                <p class="text-center md:text-left text-lg">Ya sea restaurando ese antiguo sillón heredado con un valor sentimental inigualable o renovando muebles desgastados por el uso diario, nuestro equipo de expertos carpinteros se dedica a devolverles vida y funcionalidad.</p>
+                <p class="text-center md:text-left text-lg">If you are looking to transform a space or give a new life to your furniture, we offer restructuring services. Let us help you create an environment that reflects your style and meets your needs.</p>
               </div>
             </article>
           </li>
@@ -111,30 +111,30 @@
 
     <section id="tools" class="bg-primary dark:bg-dark-primary">
       <div class="flex flex-col py-12 md:mx-auto md:px-0 px-8">
-        <h2 class="text-3xl font-bold text-center mb-8">NUESTRAS HERRAMIENTAS</h2>
+        <h2 class="text-3xl font-bold text-center mb-8">OUR TOOLS</h2>
         <div class="flex flex-col gap-8 md:mb-4 md:gap-2 md:flex-row md:justify-between md:mx-[10%]">
           <div class="relative bg-drywall bg-cover aspect-[6/4] rounded before:rounded flex justify-center items-center shadow-lg md:w-[32%] before:content-[''] before:bg-[rgb(0,0,0,0.5)] before:absolute before:inset-0">
             <span class="relative text-white text-4xl shadow-lg font-extrabold md:text-3xl">DRYWALL</span>
           </div>
           <div class="relative bg-wood bg-cover aspect-[6/4] rounded before:rounded flex justify-center items-center shadow-lg md:w-[32%] before:content-[''] before:bg-[rgb(0,0,0,0.5)] before:absolute before:inset-0">
-            <span class="relative text-white text-4xl shadow-lg font-extrabold md:text-3xl">MADERA</span>
+            <span class="relative text-white text-4xl shadow-lg font-extrabold md:text-3xl">WOOD</span>
           </div>
           <div class="relative bg-melamine bg-cover aspect-[6/4] rounded before:rounded flex justify-center items-center shadow-lg md:w-[32%] before:content-[''] before:bg-[rgb(0,0,0,0.5)] before:absolute before:inset-0">
-            <span class="relative text-white text-4xl shadow-lg font-extrabold md:text-3xl">MELAMINA</span>
+            <span class="relative text-white text-4xl shadow-lg font-extrabold md:text-3xl">MELAMINE</span>
           </div>
         </div>
       </div>
     </section>
 
     <section class="py-10 bg-secondary dark:bg-dark-secondary">
-      <h2 class="font-bold text-center text-3xl">NUESTRAS OPINIONES</h2>
+      <h2 class="font-bold text-center text-3xl">OUR REVIEWS</h2>
       <div class="flex gap-4 w-full py-4 px-4 md:px-32 overflow-x-auto snap-x">
         <article class="shrink-0 w-[90%] lg:w-[30%] px-6 rounded snap-center shadow-lg bg-primary dark:bg-dark-primary">
           <div class="aspect-video object-cover text-center mt-4">
             <h2 class="mb-4 text-xl font-bold">SERGIO</h2>
             <div class="mb-4">
               <img class="w-[60%] md:w-[40%] mx-auto mb-4 rounded-full object-cover aspect-square shadow-lg" src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-              <i>"Magia Madera convierte la carpintería en un arte encantador; sus muebles son verdaderas piezas mágicas que transforman cualquier espacio."</i>
+              <i>"Magia Madera turns carpentry into a charming art; their furniture is true magical pieces that transform any space."</i>
             </div>
           </div>
         </article>
@@ -143,7 +143,7 @@
             <h2 class="mb-4 text-xl font-bold">PATRICIA</h2>
             <div class="mb-4">
               <img class="w-[60%] md:w-[40%] mx-auto mb-4 rounded-full object-cover aspect-square shadow-lg" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-              <i>"Recomiendo Magia Madera para aquellos que buscan muebles que deslumbran con su creatividad y calidad excepcional.</i>
+              <i>"I recommend Magia Madera for those looking for furniture that dazzles with its creativity and exceptional quality."</i>
             </div>
           </div>
         </article>
@@ -152,7 +152,7 @@
             <h2 class="mb-4 text-xl font-bold">PEDRO</h2>
             <div class="mb-4">
               <img class="w-[60%] md:w-[40%] mx-auto mb-4 rounded-full object-cover aspect-square shadow-lg" src="https://img.freepik.com/foto-gratis/cerrar-al-hombre-sonriendo-naturaleza_23-2150771113.jpg?size=626&ext=jpg">
-              <i>"En Magia Madera, la carpintería se convierte en una experiencia mágica; cada mueble es una obra maestra única y duradera."</i>
+              <i>"In Magia Madera, carpentry becomes a magical experience; each piece of furniture is a unique and lasting masterpiece."</i>
             </div>
           </div>
         </article>
@@ -161,7 +161,7 @@
             <h2 class="mb-4 text-xl font-bold">BENITO</h2>
             <div class="mb-4">
               <img class="w-[60%] md:w-[40%] mx-auto mb-4 rounded-full object-cover aspect-square shadow-lg" src="data:image/jpeg;base64,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">
-              <i>"La magia de Magia Madera reside en sus muebles, donde la artesanía excepcional y el diseño cautivador se unen en perfecta armonía."</i>
+              <i>"The magic of Magia Madera resides in its furniture, where exceptional craftsmanship and captivating design come together in perfect harmony."</i>
             </div>
           </div>
         </article>
@@ -170,7 +170,7 @@
             <h2 class="mb-4 text-xl font-bold">PEPE</h2>
             <div class="mb-4">
               <img class="w-[60%] md:w-[40%] mx-auto mb-4 rounded-full object-cover aspect-square shadow-lg" src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-              <i>"Magia Madera crea magia tangible en cada pieza de mobiliario, ofreciendo no solo muebles, sino también encantamiento para tu hogar."</i>
+              <i>"Magia Madera creates tangible magic in each piece of furniture, offering not only furniture but also enchantment for your home."</i>
             </div>
           </div>
         </article>
@@ -179,7 +179,7 @@
             <h2 class="mb-4 text-xl font-bold">PELAEZ</h2>
             <div class="mb-4">
               <img class="w-[60%] md:w-[40%] mx-auto mb-4 rounded-full object-cover aspect-square shadow-lg" src="https://img.freepik.com/foto-gratis/guapo-hombre-presentacion-algo_1368-87.jpg?size=626&ext=jpg">
-              <i>"Encantado con la magia de Magia Madera; sus muebles son mucho más que objetos, son hechizos de elegancia y calidad."</i>
+              <i>"Enchanted with the magic of Magia Madera; its furniture is much more than objects, they are spells of elegance and quality."</i>
             </div>
           </div>
         </article>
@@ -188,22 +188,22 @@
     
     <section id="form" class="bg-primary dark:bg-dark-primary py-12 px-8">
       <div class="contenido md:w-[80%] lg:w-[40%] md:mx-auto flex flex-col gap-8">
-        <h2 class="text-3xl font-bold text-center">REALIZA TU <br class="md:hidden"> CONSULTA</h2>
+        <h2 class="text-3xl font-bold text-center">SUBMIT YOUR<br class="md:hidden"> INQUIRY</h2>
         <form class="flex flex-col gap-4" action="">
           <label class="font-bold" for="name">
-            Nombre:
+            Name:
             <input class="block text-black w-full font-normal px-4 py-2 rounded-xl mt-1" type="text" id="name" placeholder="Escribe tu nombre..." required>
           </label>
           <label class="font-bold" for="cellphone">
-            Número de Celular:
+            Cellphone number:
             <input class="block text-black w-full font-normal px-4 py-2 rounded-xl mt-1" type="text" id="cellphone" placeholder="Escribe tu celular..." required>
           </label>
           <label class="font-bold" for="email">
-            Correo Electrónico:
+            Email:
             <input class="block text-black w-full font-normal px-4 py-2 rounded-xl mt-1" type="text" id="email" placeholder="Escribe tu correo electrónico..." required>
           </label>
           <label class="font-bold" for="description">
-            Descripción de lo que desea:
+            Detail your inquiry:
             <textarea class="block text-black w-full font-normal px-4 py-2 rounded-xl mt-1" id="description" rows="10" placeholder="Escribe tu consulta..."
               required></textarea>
           </label>
@@ -221,18 +221,18 @@
   <!-- PIE DE PÁGINA -->
   <footer id="contact" class="bg-secondary dark:bg-dark-secondary py-20 px-8">
     <div class="contenido md:w-[80%] lg:w-[60%] md:mx-auto flex flex-col gap-8">
-      <h2 class="text-3xl font-bold text-center">CONTÁCTANOS</h2>
+      <h2 class="text-3xl font-bold text-center">CONTACT US</h2>
       <p class="text-lg text-center leading-8">
         <strong>Calle El Cedro 873 Trujillo, Perú</strong> <br>
         <strong>Email:</strong> magia@madera.com <br>
-        <strong>Teléfono:</strong> 937 87 76 30 <br>
-        <strong>Whatsapp:</strong> 644 145 145 <br>
+        <strong>Cellphone:</strong> 937 877 630 <br>
+        <strong>Whatsapp:</strong> +51 644 145 145 <br>
       </p>
     </div>
   </footer>
 
   <script src="https://kit.fontawesome.com/3cd8c90f36.js" crossorigin="anonymous"></script>
-  <script src="/src/app.js"></script>
+  <script src="../app.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -258,7 +258,7 @@
             'dark-hover': '#416183',
           },
           backgroundImage: {
-            'hero-pattern': "url(../imgs/carpinteria-2.jpg)",
+            'hero-pattern': "url(../../imgs/carpinteria-2.jpg)",
             'drywall': "url(https://img.freepik.com/foto-gratis/hombre-vista-frontal-trabajando-vistiendo-equipo-proteccion_23-2148784098.jpg?w=1380&t=st=1699645799~exp=1699646399~hmac=b9ea6f1abfc54f6bdc5958dde29ea3a78ac890b6d0ccbd942b94b08bdf716f76)",
             'wood': "url(https://img.freepik.com/foto-gratis/vista-lateral-carpintero-femenino-estudio-sierra-electrica_23-2148813332.jpg?w=1480&t=st=1699645920~exp=1699646520~hmac=6431648b52bc7b6b6cf827799b7af15393084bd69e128f8c88fa7af6cd44a45a)",
             'melamine': "url(https://img.freepik.com/foto-gratis/primer-plano-conjunto-cajones-madera_181624-25200.jpg?w=1380&t=st=1699646195~exp=1699646795~hmac=281cfd6dace5560f0d2b6c0bc04b71027b9980aa8e5a110e8e145d3671e27a73)",

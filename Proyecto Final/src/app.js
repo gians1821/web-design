@@ -6,3 +6,11 @@ const toggleMenu = () => {
 const toggleDark = () => {
     document.querySelector("html").classList.toggle('dark')
 }
+
+const toPEN = () => {
+    location.href = "../index.html"
+}
+
+const toUSA = () => {
+    location.href = "en/index.html"
+}

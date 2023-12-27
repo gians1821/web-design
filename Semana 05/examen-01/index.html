@@ -10,401 +10,414 @@
   </head>
   <body class="font-lato bg-gradient-to-tr from-secondaryClean to-white">
     
-    <!-- ENCABEZADO -->
-    <header class="bg-gradient-to-tr from-primary to-secondary fixed w-full h-[100px] shadow-xl">
-      <div
-        class="flex mx-auto items-center justify-between p-4 w-full lg:w-[75%]"
-      >
-        <picture class="w-[200px]">
+    <div class="dark:bg-secondaryDark dark:text-white">
+      <header class="bg-gradient-to-tr from-primary to-secondary fixed w-full h-[100px] shadow-xl">
+        <div class="flex mx-auto items-center justify-between p-4 w-full lg:w-[75%]">
+          <picture class="">
+            <img
+              class="w-[70px]"
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyJZtp29XB4K5s6Ig5QFqsB3fJnJebab0hbkdMwNTUpfyLN9yTsTRCRKb0cydXScZEraMdmGUDTSBOYy9N2I9sOOTPUVln70H2cP4j7Q0OZ2yckcUIK2gsFQtRtpH0X8AcobVdSkY2kfZJ3XpdzFzH9PvInBMcE_ehaDHn5yj5qjEFc-28r7eK44Ff1ZU/s16000/CA.png"
+              alt=""
+            />
+          </picture>
+  
+          <button id="menuHamburguer" class="md:hidden">
+            <div
+              class="flex items-center justify-center rounded p-2 bg-whiteClean h-[3rem]"
+            >
+              <i class="fa-solid fa-bars cursor-pointer text-[2rem]"></i>
+            </div>
+          </button>
+  
+          <ul
+            class="text-white hidden font-bold md:flex md:space-x-8"
+          >
+            <li><a class="md:hover:bg-whiteClean px-2 py-1 rounded" href="#inicio">INICIO</a></li>
+            <li><a class="md:hover:bg-whiteClean px-2 py-1 rounded" href="#about">SOBRE NOSOTROS</a></li>
+            <li><a class="md:hover:bg-whiteClean px-2 py-1 rounded" href="#equipos">EQUIPOS</a></li>
+            <li><a class="md:hover:bg-whiteClean px-2 py-1 rounded" href="#estadios">ESTADIOS</a></li>
+            <li><a class="md:hover:bg-whiteClean px-2 py-1 rounded" href="#boletin">BOLETÍN</a></li>
+          </ul>
+  
+          <ul class="gap-2 hidden lg:flex">
+            <div>
+              <button onclick="toUSA()" class="w-16 h-12 flex items-center bg-transparent justify-center hover:bg-whiteClean rounded">
+                <img class="object-contain w-10" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/1200px-Flag_of_Peru.svg.png" alt="peru-flag">
+              </button>
+            </div>
+            <div>
+              <button id="btn-dark" class="w-12 h-12 flex items-center bg-transparent justify-center hover:bg-whiteClean rounded"><i class="fa-solid fa-circle-half-stroke text-xl"></i></button>
+            </div>
+          </ul>
+    
+        </div>
+        <ul id="navbar"
+          class="fixed duration-300 -left-full justify-between bg-primaryClean w-full text-white items-center font-bold md:hidden"
+        >
+          <li id="link" class="bg-secondaryClean rounded mx-8 active:bg-secondary">
+            <a class="block text-right my-8 p-4" href="#inicio">
+              INICIO
+            </a>
+          </li>
+          <li id="link" class="bg-secondaryClean rounded mx-8 active:bg-secondary">
+            <a class="block text-right my-8 p-4" href="#about">
+              SOBRE NOSOTROS
+            </a>
+          </li>
+          <li id="link" class="bg-secondaryClean rounded mx-8 active:bg-secondary">
+            <a class="block text-right my-8 p-4" href="#equipos">
+              EQUIPOS
+            </a>
+          </li>
+          <li id="link" class="bg-secondaryClean rounded mx-8 active:bg-secondary">
+            <a class="block text-right my-8 p-4" href="#estadios">
+              ESTADIOS
+            </a>
+          </li>
+          <li id="link" class="bg-secondaryClean rounded mx-8 active:bg-secondary">
+            <a class="block text-right my-8 p-4" href="#boletin">
+              BOLETÍN
+            </a>
+          </li>
+        </ul>
+      </header>
+  
+      <!-- PRINCIPAL -->
+      <main class="pt-[100px] md:pt-[150px] lg:w-[75%] mx-auto">
+        <section id="inicio">
           <img
-            class="w-1/3"
-            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyJZtp29XB4K5s6Ig5QFqsB3fJnJebab0hbkdMwNTUpfyLN9yTsTRCRKb0cydXScZEraMdmGUDTSBOYy9N2I9sOOTPUVln70H2cP4j7Q0OZ2yckcUIK2gsFQtRtpH0X8AcobVdSkY2kfZJ3XpdzFzH9PvInBMcE_ehaDHn5yj5qjEFc-28r7eK44Ff1ZU/s16000/CA.png"
+            class="object-cover md:hidden"
+            src="https://www.eldiarioalerta.com/media/diarioalerta/images/2021/07/01/2021070117045839604.jpg"
             alt=""
           />
-          <img
-            class="hidden w-[100%]"
-            src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Conmebol_copa_america_2024.jpg"
-            alt="logo"
-          />
-        </picture>
-
-        <button id="menuHamburguer">
-          <div
-            class="md:hidden flex items-center justify-center rounded p-2 bg-whiteClean h-[3rem]"
-          >
-            <i class="fa-solid fa-bars cursor-pointer text-[2rem]"></i>
-          </div>
-        </button>
-
-        <ul
-          class="text-white hidden font-bold md:flex md:space-x-8"
-        >
-          <li><a class="md:hover:bg-whiteClean px-2 py-1 rounded" href="#inicio">INICIO</a></li>
-          <li><a class="md:hover:bg-whiteClean px-2 py-1 rounded" href="#about">SOBRE NOSOTROS</a></li>
-          <li><a class="md:hover:bg-whiteClean px-2 py-1 rounded" href="#equipos">EQUIPOS</a></li>
-          <li><a class="md:hover:bg-whiteClean px-2 py-1 rounded" href="#stadiums">ESTADIOS</a></li>
-          <li><a class="md:hover:bg-whiteClean px-2 py-1 rounded" href="#boletin">BOLETÍN</a></li>
-        </ul>
-      </div>
-      <ul id="navbar"
-        class="fixed duration-300 -left-full justify-between bg-primaryClean w-full text-white items-center font-bold mt-[99px] md:hidden"
-      >
-        <li id="link" class="bg-secondaryClean rounded mx-8 active:bg-secondary">
-          <a class="block text-right my-8 p-4" href="#inicio">
-            INICIO
-          </a>
-        </li>
-        <li id="link" class="bg-secondaryClean rounded mx-8 active:bg-secondary">
-          <a class="block text-right my-8 p-4" href="#about">
-            SOBRE NOSOTROS
-          </a>
-        </li>
-        <li id="link" class="bg-secondaryClean rounded mx-8 active:bg-secondary">
-          <a class="block text-right my-8 p-4" href="#equipos">
-            EQUIPOS
-          </a>
-        </li>
-        <li id="link" class="bg-secondaryClean rounded mx-8 active:bg-secondary">
-          <a class="block text-right my-8 p-4" href="#estadios">
-            ESTADIOS
-          </a>
-        </li>
-        <li id="link" class="bg-secondaryClean rounded mx-8 active:bg-secondary">
-          <a class="block text-right my-8 p-4" href="#boletin">
-            BOLETÍN
-          </a>
-        </li>
-      </ul>
-    </header>
-
-    <!-- PRINCIPAL -->
-    <main class="pt-[100px] md:pt-[150px] lg:w-[75%] mx-auto">
-      <section id="inicio">
-        <img
-          class="object-cover md:hidden"
-          src="https://www.eldiarioalerta.com/media/diarioalerta/images/2021/07/01/2021070117045839604.jpg"
-          alt=""
-        />
-        <picture class="hidden md:block">
-          <img class="w-[60%] mx-auto" src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2023/12/07/17019641301036.png" alt="">
-        </picture>
-      </section>
-
-      <section id="about" class="px-8 pt-8">
-        <h2 class="text-center font-bold text-large mb-4">Sobre la Copa América 2024</h2>
-        <p class="text-medium bg-whiteClean p-2 rounded">La Copa América 2024 será la <b>48.ª edición de este torneo</b>, la principal competencia futbolística entre las selecciones nacionales de América del Sur y la más antigua del mundo, será coorganizada por la <b>Conmebol</b> y la <b>Concacaf</b>. Por segunda vez el torneo se realizará en Estados Unidos desde la última vez en la edición centenario de 2016, será disputada <u>del 20 de junio al 14 de julio de 2024.</u></p>
-      </section>
-
-      <section id="equipos" class="px-8 pt-8">
-        <h2 class="font-bold text-center text-large bg-gradient-to-r from-primary to bg-secondary text-white py-1 rounded-sm">EQUIPOS</h2>
-        <section class="md:flex">
-          <section class="md:w-[45%] mx-auto">
-            <h3 class="mt-8 mb-2 text-small font-bold border-b-2 border-black px-2">Grupo A</h3>
-            <div id="grupo-a" class="flex px-[12%] bg-whiteClean p-4 rounded-lg gap-8 overflow-x-auto snap-x mb-16">
-              <article class="shrink-0 snap-center w-[70%]" >
-                <div class="aspect-video object-cover">
-                  <picture class="w-[30px] h-[30px]">
-                    <img
-                      class="w-[100%] shadow-md h-full object-cover"
-                      alt="flag-pen"
-                    />
-                  </picture>
-                  <h3 class="font-semibold text-small text-center"></h3>
-                </div>
-              </article>
-              <article class="shrink-0 snap-center w-[70%]" >
-                <div class="aspect-video object-cover">
-                  <picture class="w-[30px] h-[30px]">
-                    <img
-                      class="w-[100%] shadow-md h-full object-cover"
-                      alt="flag-arg"
-                    />
-                  </picture>
-                  <h3 class="font-semibold text-small text-center"></h3>
-                </div>
-              </article>
-              <article class="shrink-0 snap-center w-[70%]" >
-                <div class="aspect-video object-cover">
-                  <picture class="aspect-video w-[30px] h-[30px]">
-                    <img
-                      class="w-[100% shadow-md] h-full object-cover"
-                      alt="flag-chile"
-                    />
-                  </picture>
-                  <h3 class="font-semibold text-small text-center"></h3>
-                </div>
-              </article>
-              <article class="shrink-0 snap-center w-[70%]" >
-                <div class="aspect-video object-cover">
-                  <picture class="w-[30px] h-[30px]">
-                    <img
-                      class="w-[100%] shadow-md h-full object-cover"
-                      alt="flag-trinidad-y-tobago"
-                    />
-                  </picture>
-                  <h3 class="font-semibold text-small text-center"></h3>
-                </div>
-              </article>
-            </div>
-          </section>
-          <section class="md:w-[45%] mx-auto">
-            <h3 class="mt-8 mb-2 text-small font-bold border-b-2 border-black px-2">Grupo B</h3>
-            <div id="grupo-b" class="flex px-[12%] bg-whiteClean p-4 rounded-lg gap-8 overflow-x-auto snap-x mb-16">
-              <article class="shrink-0 snap-center w-[70%]" >
-                <div class="aspect-video object-cover">
-                  <picture class="w-[30px] h-[30px]">
-                    <img
-                      class="w-[100%] shadow-md h-full object-cover"
-                      alt="flag-mex"
-                    />
-                  </picture>
-                  <h3 class="font-semibold text-small text-center"></h3>
-                </div>
-              </article>
-              <article class="shrink-0 snap-center w-[70%]" >
-                <div class="aspect-video object-cover">
-                  <picture class="w-[30px] h-[30px]">
-                    <img
-                      class="w-[100%] shadow-md h-full object-cover"
-                      alt="flag-ecu"
-                    />
-                  </picture>
-                  <h3 class="font-semibold text-small text-center"></h3>
-                </div>
-              </article>
-              <article class="shrink-0 snap-center w-[70%]" >
-                <div class="aspect-video object-cover">
-                  <picture class="w-[30px] h-[30px]">
-                    <img
-                      class="w-[100%] shadow-md h-full object-cover"
-                      src=""
-                      alt="flag-ven"
-                    />
-                  </picture>
-                  <h3 class="font-semibold text-small text-center"></h3>
-                </div>
-              </article>
-              <article class="shrink-0 snap-center w-[70%]" >
-                <div class="aspect-video object-cover">
-                  <picture class="w-[30px] h-[30px]">
-                    <img
-                      class="w-[100%] shadow-md h-full object-cover"
-                      src=""
-                      alt="flag-jamaica"
-                    />
-                  </picture>
-                  <h3 class="font-semibold text-small text-center"></h3>
-                </div>
-              </article>
-            </div>
-          </section>
+          <picture class="hidden md:block">
+            <img class="w-[60%] mx-auto" src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2023/12/07/17019641301036.png" alt="">
+          </picture>
         </section>
-        <section class="md:flex">
-          <section class="md:w-[45%] mx-auto">
-            <h3 class="mt-8 mb-2 text-small font-bold border-b-2 border-black px-2">Grupo C</h3>
-            <div id="grupo-c" class="flex px-[12%] bg-whiteClean p-4 rounded-lg gap-8 overflow-x-auto snap-x mb-16">
-              <article class="shrink-0 snap-center w-[70%]" >
-                <div class="aspect-video object-cover">
-                  <picture class="w-[30px] h-[30px]">
-                    <img
-                      class="w-[100%] shadow-md h-full object-cover"
-                      alt="flag-usa"
-                    />
-                  </picture>
-                  <h3 class="font-semibold text-small text-center"></h3>
-                </div>
-              </article>
-              <article class="shrink-0 snap-center w-[70%]" >
-                <div class="aspect-video object-cover">
-                  <picture class="w-[30px] h-[30px]">
-                    <img
-                      class="w-[100%] shadow-md h-full object-cover"
-                      alt="flag-uru"
-                    />
-                  </picture>
-                  <h3 class="font-semibold text-small text-center"></h3>
-                </div>
-              </article>
-              <article class="shrink-0 snap-center w-[70%]" >
-                <div class="aspect-video object-cover">
-                  <picture class="w-[30px] h-[30px]">
-                    <img
-                      class="w-[100%] shadow-md h-full object-cover"
-                      alt="flag-panamá"
-                    />
-                  </picture>
-                  <h3 class="font-semibold text-small text-center"></h3>
-                </div>
-              </article>
-              <article class="shrink-0 snap-center w-[70%]" >
-                <div class="aspect-video object-cover">
-                  <picture class="w-[30px] h-[30px]">
-                    <img
-                      class="w-[100%] shadow-md h-full object-cover"
-                      alt="flag-bolivia"
-                    />
-                  </picture>
-                  <h3 class="font-semibold text-small text-center"></h3>
-                </div>
-              </article>
-            </div>
+  
+        <section id="about" class="px-8 pt-8">
+          <h2 class="text-center font-bold text-large mb-4">Sobre la Copa América 2024</h2>
+          <p class="text-medium bg-whiteClean p-2 rounded">La Copa América 2024 será la <b>48.ª edición de este torneo</b>, la principal competencia futbolística entre las selecciones nacionales de América del Sur y la más antigua del mundo, será coorganizada por la <b>Conmebol</b> y la <b>Concacaf</b>. Por segunda vez el torneo se realizará en Estados Unidos desde la última vez en la edición centenario de 2016, será disputada <u>del 20 de junio al 14 de julio de 2024.</u></p>
+        </section>
+  
+        <section id="equipos" class="px-8 pt-8">
+          <h2 class="font-bold text-center text-large bg-gradient-to-r from-primary to bg-secondary text-white py-1 rounded-sm">EQUIPOS</h2>
+          <section class="md:flex">
+            <section class="md:w-[45%] mx-auto">
+              <h3 class="mt-8 mb-2 text-small font-bold border-b-2 border-black px-2">Grupo A</h3>
+              <div id="grupo-a" class="flex px-[12%] bg-whiteClean p-4 rounded-lg gap-8 overflow-x-auto snap-x mb-16">
+                <article class="shrink-0 snap-center w-[70%]" >
+                  <div class="aspect-video object-cover">
+                    <picture class="w-[30px] h-[30px]">
+                      <img
+                        class="w-[100%] shadow-md h-full object-cover"
+                        alt="flag-pen"
+                      />
+                    </picture>
+                    <h3 class="font-semibold text-small text-center"></h3>
+                  </div>
+                </article>
+                <article class="shrink-0 snap-center w-[70%]" >
+                  <div class="aspect-video object-cover">
+                    <picture class="w-[30px] h-[30px]">
+                      <img
+                        class="w-[100%] shadow-md h-full object-cover"
+                        alt="flag-arg"
+                      />
+                    </picture>
+                    <h3 class="font-semibold text-small text-center"></h3>
+                  </div>
+                </article>
+                <article class="shrink-0 snap-center w-[70%]" >
+                  <div class="aspect-video object-cover">
+                    <picture class="aspect-video w-[30px] h-[30px]">
+                      <img
+                        class="w-[100% shadow-md] h-full object-cover"
+                        alt="flag-chile"
+                      />
+                    </picture>
+                    <h3 class="font-semibold text-small text-center"></h3>
+                  </div>
+                </article>
+                <article class="shrink-0 snap-center w-[70%]" >
+                  <div class="aspect-video object-cover">
+                    <picture class="w-[30px] h-[30px]">
+                      <img
+                        class="w-[100%] shadow-md h-full object-cover"
+                        alt="flag-trinidad-y-tobago"
+                      />
+                    </picture>
+                    <h3 class="font-semibold text-small text-center"></h3>
+                  </div>
+                </article>
+              </div>
+            </section>
+            <section class="md:w-[45%] mx-auto">
+              <h3 class="mt-8 mb-2 text-small font-bold border-b-2 border-black px-2">Grupo B</h3>
+              <div id="grupo-b" class="flex px-[12%] bg-whiteClean p-4 rounded-lg gap-8 overflow-x-auto snap-x mb-16">
+                <article class="shrink-0 snap-center w-[70%]" >
+                  <div class="aspect-video object-cover">
+                    <picture class="w-[30px] h-[30px]">
+                      <img
+                        class="w-[100%] shadow-md h-full object-cover"
+                        alt="flag-mex"
+                      />
+                    </picture>
+                    <h3 class="font-semibold text-small text-center"></h3>
+                  </div>
+                </article>
+                <article class="shrink-0 snap-center w-[70%]" >
+                  <div class="aspect-video object-cover">
+                    <picture class="w-[30px] h-[30px]">
+                      <img
+                        class="w-[100%] shadow-md h-full object-cover"
+                        alt="flag-ecu"
+                      />
+                    </picture>
+                    <h3 class="font-semibold text-small text-center"></h3>
+                  </div>
+                </article>
+                <article class="shrink-0 snap-center w-[70%]" >
+                  <div class="aspect-video object-cover">
+                    <picture class="w-[30px] h-[30px]">
+                      <img
+                        class="w-[100%] shadow-md h-full object-cover"
+                        src=""
+                        alt="flag-ven"
+                      />
+                    </picture>
+                    <h3 class="font-semibold text-small text-center"></h3>
+                  </div>
+                </article>
+                <article class="shrink-0 snap-center w-[70%]" >
+                  <div class="aspect-video object-cover">
+                    <picture class="w-[30px] h-[30px]">
+                      <img
+                        class="w-[100%] shadow-md h-full object-cover"
+                        src=""
+                        alt="flag-jamaica"
+                      />
+                    </picture>
+                    <h3 class="font-semibold text-small text-center"></h3>
+                  </div>
+                </article>
+              </div>
+            </section>
           </section>
-          <section class="md:w-[45%] mx-auto">
-            <h3 class="mt-8 mb-2 text-small font-bold border-b-2 border-black px-2">Grupo D</h3>
-            <div id="grupo-d" class="flex px-[12%] bg-whiteClean p-4 rounded-lg gap-8 overflow-x-auto snap-x mb-16">
-              <article class="shrink-0 snap-center w-[70%]" >
-                <div class="aspect-video object-cover">
-                  <picture class="w-[30px] h-[30px]">
-                    <img
-                      class="w-[100%] shadow-md h-full object-cover"
-                      alt="flag-brz"
-                    />
-                  </picture>
-                  <h3 class="font-semibold text-small text-center"></h3>
-                </div>
-              </article>
-              <article class="shrink-0 snap-center w-[70%]" >
-                <div class="aspect-video object-cover">
-                  <picture class="w-[30px] h-[30px]">
-                    <img
-                      class="w-[100%] shadow-md h-full object-cover"
-                      alt="flag-col"
-                    />
-                  </picture>
-                  <h3 class="font-semibold text-small text-center"></h3>
-                </div>
-              </article>
-              <article class="shrink-0 snap-center w-[70%]" >
-                <div class="aspect-video object-cover">
-                  <picture class="w-[30px] h-[30px]">
-                    <img
-                      class="w-[100%] shadow-md h-full object-cover"
-                      alt="flag-paraguay"
-                    />
-                  </picture>
-                  <h3 class="font-semibold text-small text-center"></h3>
-                </div>
-              </article>
-              <article class="shrink-0 snap-center w-[70%]" >
-                <div class="aspect-video object-cover">
-                  <picture class="w-[30px] h-[30px]">
-                    <img
-                      class="w-[100%] shadow-md h-full object-cover"
-                      alt="flag-costa-rica"
-                    />
-                  </picture>
-                  <h3 class="font-semibold text-small text-center"></h3>
-                </div>
-              </article>
-            </div>
+          <section class="md:flex">
+            <section class="md:w-[45%] mx-auto">
+              <h3 class="mt-8 mb-2 text-small font-bold border-b-2 border-black px-2">Grupo C</h3>
+              <div id="grupo-c" class="flex px-[12%] bg-whiteClean p-4 rounded-lg gap-8 overflow-x-auto snap-x mb-16">
+                <article class="shrink-0 snap-center w-[70%]" >
+                  <div class="aspect-video object-cover">
+                    <picture class="w-[30px] h-[30px]">
+                      <img
+                        class="w-[100%] shadow-md h-full object-cover"
+                        alt="flag-usa"
+                      />
+                    </picture>
+                    <h3 class="font-semibold text-small text-center"></h3>
+                  </div>
+                </article>
+                <article class="shrink-0 snap-center w-[70%]" >
+                  <div class="aspect-video object-cover">
+                    <picture class="w-[30px] h-[30px]">
+                      <img
+                        class="w-[100%] shadow-md h-full object-cover"
+                        alt="flag-uru"
+                      />
+                    </picture>
+                    <h3 class="font-semibold text-small text-center"></h3>
+                  </div>
+                </article>
+                <article class="shrink-0 snap-center w-[70%]" >
+                  <div class="aspect-video object-cover">
+                    <picture class="w-[30px] h-[30px]">
+                      <img
+                        class="w-[100%] shadow-md h-full object-cover"
+                        alt="flag-panamá"
+                      />
+                    </picture>
+                    <h3 class="font-semibold text-small text-center"></h3>
+                  </div>
+                </article>
+                <article class="shrink-0 snap-center w-[70%]" >
+                  <div class="aspect-video object-cover">
+                    <picture class="w-[30px] h-[30px]">
+                      <img
+                        class="w-[100%] shadow-md h-full object-cover"
+                        alt="flag-bolivia"
+                      />
+                    </picture>
+                    <h3 class="font-semibold text-small text-center"></h3>
+                  </div>
+                </article>
+              </div>
+            </section>
+            <section class="md:w-[45%] mx-auto">
+              <h3 class="mt-8 mb-2 text-small font-bold border-b-2 border-black px-2">Grupo D</h3>
+              <div id="grupo-d" class="flex px-[12%] bg-whiteClean p-4 rounded-lg gap-8 overflow-x-auto snap-x mb-16">
+                <article class="shrink-0 snap-center w-[70%]" >
+                  <div class="aspect-video object-cover">
+                    <picture class="w-[30px] h-[30px]">
+                      <img
+                        class="w-[100%] shadow-md h-full object-cover"
+                        alt="flag-brz"
+                      />
+                    </picture>
+                    <h3 class="font-semibold text-small text-center"></h3>
+                  </div>
+                </article>
+                <article class="shrink-0 snap-center w-[70%]" >
+                  <div class="aspect-video object-cover">
+                    <picture class="w-[30px] h-[30px]">
+                      <img
+                        class="w-[100%] shadow-md h-full object-cover"
+                        alt="flag-col"
+                      />
+                    </picture>
+                    <h3 class="font-semibold text-small text-center"></h3>
+                  </div>
+                </article>
+                <article class="shrink-0 snap-center w-[70%]" >
+                  <div class="aspect-video object-cover">
+                    <picture class="w-[30px] h-[30px]">
+                      <img
+                        class="w-[100%] shadow-md h-full object-cover"
+                        alt="flag-paraguay"
+                      />
+                    </picture>
+                    <h3 class="font-semibold text-small text-center"></h3>
+                  </div>
+                </article>
+                <article class="shrink-0 snap-center w-[70%]" >
+                  <div class="aspect-video object-cover">
+                    <picture class="w-[30px] h-[30px]">
+                      <img
+                        class="w-[100%] shadow-md h-full object-cover"
+                        alt="flag-costa-rica"
+                      />
+                    </picture>
+                    <h3 class="font-semibold text-small text-center"></h3>
+                  </div>
+                </article>
+              </div>
+            </section>
           </section>
         </section>
-      </section>
-
-      <section id="estadios" class="px-8 pt-8">
-        <h2 class="font-bold text-center text-large bg-gradient-to-r from-primary to bg-secondary text-white py-1 rounded-sm mb-2">ESTADIOS</h2>
-        <p class="font-light text-small text-center mb-8 w-3/4 mx-auto">Algunos de los estadios donde se celebrarán los partidos de esta copa</p>
-
-        <section class="md:flex">
-          <article id="stadium-1" class="mb-6 md:w-[30%] md:mx-auto">
-            <picture>
-              <img class="aspect-video object-cover rounded-md shadow-md" alt="stadium-1">
-            </picture>
-            <p>
-              <span class="block font-bold text-medium"></span>
-              <span class="block font-light text-small"></span>
-            </p>
-          </article>
-          <article id="stadium-2" class="mb-6 md:w-[30%] md:mx-auto">
-            <picture>
-              <img class="aspect-video object-cover rounded-md shadow-md" alt="stadium-2">
-            </picture>
-            <p>
-              <span class="block font-bold text-medium"></span>
-              <span class="block font-light text-small"></span>
-            </p>
-          </article>
-          <article id="stadium-3" class="mb-6 md:w-[30%] md:mx-auto">
-            <picture>
-              <img class="aspect-video object-cover rounded-md shadow-md" alt="stadium-3">
-            </picture>
-            <p>
-              <span class="block font-bold text-medium"></span>
-              <span class="block font-light text-small"></span>
-            </p>
-          </article>  
+  
+        <section id="estadios" class="px-8 pt-8">
+          <h2 class="font-bold text-center text-large bg-gradient-to-r from-primary to bg-secondary text-white py-1 rounded-sm mb-2">ESTADIOS</h2>
+          <p class="font-light text-small text-center mb-8 w-3/4 mx-auto">Algunos de los estadios donde se celebrarán los partidos de esta copa</p>
+  
+          <section class="md:flex">
+            <article id="stadium-1" class="mb-6 md:w-[30%] md:mx-auto">
+              <picture>
+                <img class="aspect-video object-cover rounded-md shadow-md" alt="stadium-1">
+              </picture>
+              <p>
+                <span class="block font-bold text-medium"></span>
+                <span class="block font-light text-small"></span>
+              </p>
+            </article>
+            <article id="stadium-2" class="mb-6 md:w-[30%] md:mx-auto">
+              <picture>
+                <img class="aspect-video object-cover rounded-md shadow-md" alt="stadium-2">
+              </picture>
+              <p>
+                <span class="block font-bold text-medium"></span>
+                <span class="block font-light text-small"></span>
+              </p>
+            </article>
+            <article id="stadium-3" class="mb-6 md:w-[30%] md:mx-auto">
+              <picture>
+                <img class="aspect-video object-cover rounded-md shadow-md" alt="stadium-3">
+              </picture>
+              <p>
+                <span class="block font-bold text-medium"></span>
+                <span class="block font-light text-small"></span>
+              </p>
+            </article>  
+          </section>
+          <section class="md:flex">
+            <article id="stadium-4" class="mb-6 md:w-[30%] md:mx-auto">
+              <picture>
+                <img class="aspect-video object-cover rounded-md shadow-md" alt="stadium-4">
+              </picture>
+              <p>
+                <span class="block font-bold text-medium"></span>
+                <span class="block font-light text-small"></span>
+              </p>
+            </article>
+            <article id="stadium-5" class="mb-6 md:w-[30%] md:mx-auto">
+              <picture>
+                <img class="aspect-video object-cover rounded-md shadow-md" alt="stadium-5">
+              </picture>
+              <p>
+                <span class="block font-bold text-medium"></span>
+                <span class="block font-light text-small"></span>
+              </p>
+            </article>
+            <article id="stadium-6" class="mb-6 md:w-[30%] md:mx-auto">
+              <picture>
+                <img class="aspect-video object-cover rounded-md shadow-md" alt="stadium-6">
+              </picture>
+              <p>
+                <span class="block font-bold text-medium"></span>
+                <span class="block font-light text-small"></span>
+              </p>
+            </article>
+          </section>
         </section>
-        <section class="md:flex">
-          <article id="stadium-4" class="mb-6 md:w-[30%] md:mx-auto">
-            <picture>
-              <img class="aspect-video object-cover rounded-md shadow-md" alt="stadium-4">
-            </picture>
-            <p>
-              <span class="block font-bold text-medium"></span>
-              <span class="block font-light text-small"></span>
-            </p>
-          </article>
-          <article id="stadium-5" class="mb-6 md:w-[30%] md:mx-auto">
-            <picture>
-              <img class="aspect-video object-cover rounded-md shadow-md" alt="stadium-5">
-            </picture>
-            <p>
-              <span class="block font-bold text-medium"></span>
-              <span class="block font-light text-small"></span>
-            </p>
-          </article>
-          <article id="stadium-6" class="mb-6 md:w-[30%] md:mx-auto">
-            <picture>
-              <img class="aspect-video object-cover rounded-md shadow-md" alt="stadium-6">
-            </picture>
-            <p>
-              <span class="block font-bold text-medium"></span>
-              <span class="block font-light text-small"></span>
-            </p>
-          </article>
+  
+        <section id="boletin" class="px-8 py-8">
+          <h2 class="font-bold text-center text-large bg-gradient-to-r from-primary to bg-secondary text-white py-1 rounded-sm mb-2">BOLETÍN</h2>
+          <p class="font-light text-center text-small mb-8">Suscríbete para enterarte de todas las noticias día a día</p>
+          <form class="bg-whiteClean rounded-md px-6 py-4 md:w-[80%] mx-auto">
+            <div class="md:flex md:justify-between">
+              <label class="block mb-4 md:w-[40%] mx-auto">
+                Nombre:
+                <input class="block w-full rounded-sm mt-1 py-1 px-2" type="text">
+              </label>
+              <label class="block mb-4 md:w-[50%] mx-auto">
+                Correo electrónico:
+                <input class="block w-full rounded-sm mt-1 py-1 px-2" type="email">
+              </label>
+            </div>
+            <div class="flex w-full">
+              <button class="bg-gradient-to-br from-secondaryClean to whiteClean md:justify-center py-2 px-4 rounded-lg font-bold w-max mx-auto">Suscribirme</button>
+            </div>
+          </form>
         </section>
-      </section>
-
-      <section id="boletin" class="px-8 py-8">
-        <h2 class="font-bold text-center text-large bg-gradient-to-r from-primary to bg-secondary text-white py-1 rounded-sm mb-2">BOLETÍN</h2>
-        <p class="font-light text-center text-small mb-8">Suscríbete para enterarte de todas las noticias día a día</p>
-        <form class="bg-whiteClean rounded-md px-6 py-4 md:w-[80%] mx-auto">
-          <div class="md:flex md:justify-between">
-            <label class="block mb-4 md:w-[40%] mx-auto">
-              Nombre:
-              <input class="block w-full rounded-sm mt-1 py-1 px-2" type="text">
-            </label>
-            <label class="block mb-4 md:w-[50%] mx-auto">
-              Correo electrónico:
-              <input class="block w-full rounded-sm mt-1 py-1 px-2" type="email">
-            </label>
-          </div>
-          <div class="flex w-full">
-            <button class="bg-gradient-to-br from-secondaryClean to whiteClean md:justify-center py-2 px-4 rounded-lg font-bold w-max mx-auto">Suscribirme</button>
-          </div>
-        </form>
-      </section>
-    </main>
-
-    <footer class="bg-secondaryClean ">
-      <div class="flex justify-between flex-col md:flex-row md:grid-cols-3 gap-8 p-8 md:w-[75%] md:mx-auto">
-        <p class="px-4 text-center md:w-[30%]">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur veritatis totam eum doloribus saepe minus architecto est laboriosam odio facilis?
-        </p>
-        <ul class="border-b-2 border-t-2 md:border-b-0 md:border-t-0 md:border-r-2 md:border-l-2 px-4 text-center md:w-[30%] py-4">
-          <li><a href="#about">SOBRE LA COPA</></li>
-          <li><a href="#equipos">LOS EQUIPOS</a></li>
-          <li><a href="#estadios">LOS ESTADIOS</a></li>
-          <li><a href="#boletin">NUESTRO BOLETÍN</a></li>
-        </ul>
-        <ul class="flex justify-around px-16 md:w-[30%]">
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-        </ul>  
-      </div>
-      
-    </footer>
+  
+        <div class="fixed bottom-8 z-50 right-8">
+          <a class="w-16 h-16 flex justify-center items-center bg-gradient-to-br from-[#25D366] to-[#6eaf5a] rounded-full shadow-lg" href="https://wa.me/51949547447?text=Hola! Deseo información sobre la Copa América 2024" target="_blank">
+            <i class="fa-brands fa-whatsapp text-2xl"></i>
+          </a>
+        </div>
+      </main>
+  
+      <footer class="bg-secondaryClean dark:bg-primary">
+        <div class="flex justify-between flex-col md:flex-row md:grid-cols-3 gap-8 p-8 md:w-[75%] md:mx-auto">
+          <p class="px-4 text-center md:w-[30%]">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur veritatis totam eum doloribus saepe minus architecto est laboriosam odio facilis?
+          </p>
+          <ul class="border-b-2 border-t-2 md:border-b-0 md:border-t-0 md:border-r-2 md:border-l-2 px-4 text-center md:w-[30%] py-4">
+            <li><a href="#about">SOBRE LA COPA</></li>
+            <li><a href="#equipos">LOS EQUIPOS</a></li>
+            <li><a href="#estadios">LOS ESTADIOS</a></li>
+            <li><a href="#boletin">NUESTRO BOLETÍN</a></li>
+          </ul>
+          <ul class="flex justify-around px-16 md:w-[30%]">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          </ul>  
+        </div>
+        
+      </footer>  
+    </div>
+    <!-- ENCABEZADO -->
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script
@@ -425,6 +438,7 @@
             colors: {
               primary: "hsl(217, 80%, 25%)",
               secondary: "hsl(201, 93%, 42%)",
+              secondaryDark: "hsla(201, 93%, 25%, 1)",
               white: "hsl(0, 0%, 100%)",
               black: "hsl(0, 0%, 0%)",
               bgWhite: "hsl(0, 0%, 100%)",
@@ -437,7 +451,9 @@
           fontSize: {
             small: '14px',
             medium: '16px',
-            large: '18px'
+            large: '18px',
+            'xl': '24px',
+            '2xl': '32px'
           }
         },
       };
